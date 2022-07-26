@@ -1,0 +1,89 @@
+{
+	"arrowColors": [
+		"#C24B99",
+		"#00FFFF",
+		"#12FA05",
+		"#F9393F"
+	],
+	"camOffset": {
+		"x": -90,
+		"y": 50
+	},
+	"globalOffset": {
+		"x": 0,
+		"y": 0
+	},
+	"healthbarColor": "#483000",
+	"flipX": false,
+	"anims": [
+		{
+			"indices": null,
+			"x": 46,
+			"y": -180,
+			"anim": "Eggman_Idle",
+			"loop": false,
+			"name": "idle",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 53.7037037037037,
+			"y": 20.2962962962963,
+			"anim": "Eggman_Laugh",
+			"loop": false,
+			"name": "laugh",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 46,
+			"y": -7.5555555555556,
+			"anim": "Eggman_Right",
+			"loop": false,
+			"name": "singRIGHT",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 74.6666666666667,
+			"y": -268.444444444444,
+			"anim": "Eggman_Down",
+			"loop": false,
+			"name": "singDOWN",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 213.333333333333,
+			"y": -81.7777777777778,
+			"anim": "Eggman_Left",
+			"loop": false,
+			"name": "singLEFT",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 165.777777777778,
+			"y": 60,
+			"anim": "Eggman_Up",
+			"loop": false,
+			"name": "singUP",
+			"framerate": 24
+		}
+	],
+	"danceSteps": [
+		"idle"
+	],
+	"antialiasing": true,
+	"healthIconSteps": [
+		[
+			20,
+			0
+		],
+		[
+			0,
+			1
+		]
+	],
+	"scale": 1
+}

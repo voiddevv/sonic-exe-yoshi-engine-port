@@ -1,0 +1,84 @@
+{
+	"arrowColors": null,
+	"camOffset": {
+		"x": -70,
+		"y": -80
+	},
+	"globalOffset": {
+		"x": 0,
+		"y": 0
+	},
+	"healthbarColor": "#01005C",
+	"flipX": false,
+	"anims": [
+		{
+			"indices": null,
+			"x": 109.037037037037,
+			"y": 16.5925925925926,
+			"anim": "NewPhase2Sonic Idle instance 1",
+			"loop": false,
+			"name": "idle",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 203.851851851852,
+			"y": -180.148148148148,
+			"anim": "NewPhase2Sonic Right instance 1",
+			"loop": false,
+			"name": "singRIGHT",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 113.777777777778,
+			"y": -111.407407407407,
+			"anim": "NewPhase2Sonic Down instance 1",
+			"loop": false,
+			"name": "singDOWN",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 90.0740740740741,
+			"y": -40.2962962962963,
+			"anim": "NewPhase2Sonic Laugh instance 1",
+			"loop": false,
+			"name": "laugh",
+			"framerate": 40
+		},
+		{
+			"indices": null,
+			"x": 78.2222222222222,
+			"y": -2.37037037037037,
+			"anim": "NewPhase2Sonic Up instance 1",
+			"loop": false,
+			"name": "singUP",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 192,
+			"y": -161.185185185185,
+			"anim": "NewPhase2Sonic Left instance 1",
+			"loop": false,
+			"name": "singLEFT",
+			"framerate": 24
+		}
+	],
+	"danceSteps": [
+		"idle"
+	],
+	"antialiasing": true,
+	"healthIconSteps": [
+		[
+			20,
+			0
+		],
+		[
+			0,
+			1
+		]
+	],
+	"scale": 1
+}

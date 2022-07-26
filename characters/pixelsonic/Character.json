@@ -1,0 +1,75 @@
+{
+	"arrowColors": null,
+	"camOffset": {
+		"x": 90,
+		"y": 460
+	},
+	"globalOffset": {
+		"x": 0,
+		"y": 0
+	},
+	"healthbarColor": "#34308C",
+	"flipX": false,
+	"anims": [
+		{
+			"indices": null,
+			"x": -145.382716049383,
+			"y": -489.876543209877,
+			"anim": "Sonic_EXE_Pixel idle",
+			"loop": false,
+			"name": "idle",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": -138.666666666667,
+			"y": -496,
+			"anim": "Sonic_EXE_Pixel NOTE RIGHT",
+			"loop": false,
+			"name": "singRIGHT",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": -149.333333333333,
+			"y": -496,
+			"anim": "Sonic_EXE_Pixel Sonic_EXE_Pixel NOTE DOWN",
+			"loop": false,
+			"name": "singDOWN",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": -129.777777777778,
+			"y": -494.222222222222,
+			"anim": "Sonic_EXE_Pixel NOTE UP",
+			"loop": false,
+			"name": "singUP",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": -168.888888888889,
+			"y": -497.777777777778,
+			"anim": "Sonic_EXE_Pixel Sonic_EXE_Pixel NOTE LEFT",
+			"loop": false,
+			"name": "singLEFT",
+			"framerate": 24
+		}
+	],
+	"danceSteps": [
+		"idle"
+	],
+	"antialiasing": false,
+	"healthIconSteps": [
+		[
+			20,
+			0
+		],
+		[
+			0,
+			1
+		]
+	],
+	"scale": 8.99999999999999
+}

@@ -1,0 +1,31 @@
+{
+	"songs": [
+		{
+			"scripts": [
+				"stages/triple"
+			],
+			"difficulties": null,
+			"end_cutscene": null,
+			"cutscene": null,
+			"name": "triple-trouble"
+		},
+		{
+			"scripts": [
+				"stages/sonicStage"
+			],
+			"difficulties": null,
+			"end_cutscene": null,
+			"cutscene": null,
+			"name": "too-slow"
+		},
+		{
+			"scripts": [
+				"stages/sonicexeStage"
+			],
+			"difficulties": null,
+			"end_cutscene": null,
+			"cutscene": null,
+			"name": "you-cant-run"
+		}
+	]
+}

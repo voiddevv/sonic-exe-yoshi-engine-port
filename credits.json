@@ -1,0 +1,42 @@
+{
+    "credits" : [
+        {
+            "name" : "the mod",
+            "role" : "its the mod.",
+            "icon" : "cerd/modicon",
+            "urls" : [
+                {
+                    "name" : "gamebanana",
+                    "url" : "https://gamebanana.com/mods/316022"
+                }
+    
+
+            ]
+        },
+        {
+            "name" : "Divide <3",
+            "role" : "Owner/Artist",
+            "icon" : "null"
+              
+        },
+        {
+            "name" : "RightBurstUltra",
+            "role" : "Composer",
+            "icon" : "cerd/RightBurstUltra",
+            "urls" : [
+                {
+                    "name" : "gamebanana",
+                    "url" : "https://gamebanana.com/members/1965277"
+                }
+    
+
+            ]
+        },
+        {
+            "name" : "Revie",
+            "role" : "Director/Art",
+            "icon" : "null"
+        }
+        
+    ]
+}

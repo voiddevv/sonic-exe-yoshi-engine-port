@@ -1,0 +1,93 @@
+{
+	"arrowColors": null,
+	"camOffset": {
+		"x": 70,
+		"y": 260
+	},
+	"globalOffset": {
+		"x": 0,
+		"y": 0
+	},
+	"healthbarColor": "#0155B1",
+	"flipX": false,
+	"anims": [
+		{
+			"indices": null,
+			"x": -49.7777777777778,
+			"y": -146.962962962963,
+			"anim": "SONICmoveIDLE",
+			"loop": false,
+			"name": "idle",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 7.11111111111111,
+			"y": -158.814814814815,
+			"anim": "SONICmoveDOWN",
+			"loop": false,
+			"name": "singDOWN",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": -54.5185185185185,
+			"y": -130.37037037037,
+			"anim": "SONICmoveRIGHT",
+			"loop": false,
+			"name": "singRIGHT",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": -23.7037037037037,
+			"y": -151.703703703704,
+			"anim": "SONIClaugh",
+			"loop": false,
+			"name": "singDOWN-alt",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 9.48148148148148,
+			"y": -163.555555555556,
+			"anim": "SONICmoveLEFT",
+			"loop": false,
+			"name": "singLEFT",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": -40.2962962962963,
+			"y": -99.5555555555556,
+			"anim": "SONICmoveUP",
+			"loop": false,
+			"name": "singUP",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 11.8518518518519,
+			"y": -151.703703703704,
+			"anim": "sonicImmagetya",
+			"loop": false,
+			"name": "immagetya",
+			"framerate": 24
+		}
+	],
+	"danceSteps": [
+		"idle"
+	],
+	"antialiasing": true,
+	"healthIconSteps": [
+		[
+			20,
+			0
+		],
+		[
+			0,
+			1
+		]
+	],
+	"scale": 1
+}
