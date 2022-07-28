@@ -1,4 +1,5 @@
 //
+//var cpustrum = cpuStrums.members[0, 1, 2, 3, 4];
 function doP3JumpKNUCKLES()
 	{
 		trace('SIMPLE JUMPSCARE');
@@ -89,15 +90,19 @@ function doP3Static()
 	}
 
 	//
-var tails:Character = null;
-var xeo:Character = null;
-var xeoflip:Character = null;
-var bf2flip:Character = null;
-var bf2:Chrarcter = null;
-var kun:Character = null;
-var eggman:Character = null;
+var tails:Character;
+var xeo:Character = new Character(20 - 200, -94.75 + 100, mod + ':xeo');
+var xeoflip:Character;
+var bf2flip:Character;
+var bf2:Chrarcter;
+var kun:Character;
+var eggman:Character = new Character(20 - 200, 30 + 200, mod + ':eggman');
 function create() {
-					
+						
+						
+						
+						
+						
 						var sSKY:FlxSprite = new FlxSprite(-621.1, -395.65).loadGraphic(Paths.image('stages/triple/Glitch'));
 						sSKY.antialiasing = true;
 						sSKY.scrollFactor.set(0.9, 1);
@@ -157,9 +162,13 @@ function createPost() {
 	cpuStrums.members[0].x += 50;
 	cpuStrums.members[4].x -= 65;
 	cpuStrums.members[3].x -= 65;
+	camFollowLerp = 0.10;
+	//cpuStrum.x -= 700;
 	PlayState.gf.visible = false;
 }
 function stepHit(curStep:Int) {
+	
+	//getCamPos();
 	switch curStep{
 		case 1, 1024, 1088, 1216, 1280, 2305, 2810, 3199, 4096:
 			doP3Static();
@@ -169,11 +178,13 @@ function stepHit(curStep:Int) {
 			FlxTween.tween(FlxG.camera, {zoom: 0.9}, 2, {ease: FlxEase.cubeOut});
 			defaultCamZoom = 0.9;
 			p3staticbg.visible = true;
+			dad.destroy();
 			remove(dad);
 			dads.remove(dad);
-    		xeo = new Character(20 - 200, -94.75 + 100, mod + ':xeo');
+    		//xeo = new Character(20 - 200, -94.75 + 100, mod + ':xeo');
 			PlayState.dad = (xeo);
     		dads.push(xeo);
+			xeo.visible = true;
     		PlayState.add(xeo);
     		PlayState.iconP2.changeCharacter(mod + ':xeo');
 
@@ -188,21 +199,20 @@ function stepHit(curStep:Int) {
 			FlxTween.tween(FlxG.camera, {zoom: 1.1}, 2, {ease: FlxEase.cubeOut});
 			defaultCamZoom = 1.1;
 			p3staticbg.visible = false;
-
-			dads.remove(xeo);
-			remove(xeo);			
+			//xeo.destroy();
+			remove(xeo);
+			
 
 			kun = new Character(1300 + 100 - 206, 260 + 44, mod + ':kun');
-			PlayState.dad = (kun);
     		dads.push(kun);
     		PlayState.add(kun);
     		PlayState.iconP2.changeCharacter(mod + ':kun');
-			kun.flipX;
+			kun.flipX = true;
 			PlayState.remove(PlayState.boyfriend);
     		PlayState.boyfriend.destroy();
-    		PlayState.boyfriends = [new Boyfriend(1300 + 100 - 206, 260 + 44, 'bf')];
+    		PlayState.boyfriends = [new Boyfriend(466.1, 685.6 - 300, 'bf')];
     		PlayState.add(PlayState.boyfriend);
-			Boyfriend.flipX;
+			boyfriend.flipX = true;
 			
 			
 			doP3JumpKNUCKLES();
@@ -215,17 +225,37 @@ function stepHit(curStep:Int) {
 					p3staticbg.visible = true;
 					
 
-					
+					PlayState.remove(PlayState.boyfriend);
+    				PlayState.boyfriend.destroy();
+    				PlayState.boyfriends = [new Boyfriend(502.45 - 350, 370.45, mod + ':bf2flip')];
+    				PlayState.add(PlayState.boyfriend);
+					//boyfriend.flipX = true;
 
+					xeoflip = new Character(1300 - 250, -94.75 + 100, mod + ':xeoflip');
+    				dads.push(xeoflip);
+    				PlayState.add(xeoflip);
+    				PlayState.iconP2.changeCharacter(mod + ':xeo');
+					//xeoflip.flipX = true ;
+					xeoflip = PlayState.dad;
 
 					
 					case 2823:
 					//doP3JumpEGGMAN();
 
+					remove(dad);
+					//kun.destroy();
+					//remove(kun);
 					FlxTween.tween(FlxG.camera, {zoom: 1}, 2, {ease: FlxEase.cubeOut});
 					defaultCamZoom = 1;
+					PlayState.remove(PlayState.boyfriend);
+    				PlayState.boyfriend.destroy();
+    				PlayState.boyfriends = [new Boyfriend(466.1 + 200, 685.6 - 250, 'bf')];
+    				PlayState.add(PlayState.boyfriend);
 
 
+					PlayState.add(eggman);
+					dads.push(eggman);
+    				PlayState.iconP2.changeCharacter(mod + ':eggman');
 					/*puStrums.forEach(function(spr:FlxSprite)
 					{
 						if (!FlxG.save.data.midscroll)

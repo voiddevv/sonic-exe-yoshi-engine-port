@@ -26,6 +26,15 @@
 			"end_cutscene": null,
 			"cutscene": null,
 			"name": "you-cant-run"
+		},
+		{
+			"scripts": [
+				"sonicexe:/stages/lordx stage"
+			],
+			"difficulties": null,
+			"end_cutscene": "",
+			"cutscene": "",
+			"name": "cycles"
 		}
 	]
 }
