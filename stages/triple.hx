@@ -251,7 +251,7 @@ function stepHit(curStep:Int) {
     				PlayState.boyfriend.destroy();
     				PlayState.boyfriends = [new Boyfriend(466.1 + 200, 685.6 - 250, 'bf')];
     				PlayState.add(PlayState.boyfriend);
-
+					remove(kun)
 
 					PlayState.add(eggman);
 					dads.push(eggman);

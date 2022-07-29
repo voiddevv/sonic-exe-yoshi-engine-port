@@ -110,21 +110,21 @@ function stepHit(curStep:Int) {
 			doStaticSign(0, false);
 
 			remove(gf);
-			gf = new Character(460, 130, 'sonicexe:gf2');
+			gf = new Character(460, 130, mod + ':gf2');
 			add(gf);
 
 			PlayState.remove(PlayState.boyfriend);
     		PlayState.boyfriend.destroy();
     		PlayState.boyfriends = [new Boyfriend(0, -190, mod + ':pixelbf2')];
     		PlayState.add(PlayState.boyfriend);
-			PlayState.iconP1.changeCharacter('sonicexe:pixelbf2');
+			PlayState.iconP1.changeCharacter(mod + ':pixelbf2');
 
 			PlayState.remove(PlayState.dad);
 			newCharacter = new Character(100, 100 + -250 - 50, mod + ':pixelsonic');
 			newCharacter.visible = false;
 			PlayState.dads.push(newCharacter);
 			PlayState.add(newCharacter);
-			PlayState.iconP2.changeCharacter('sonicexe:pixelsonic');
+			PlayState.iconP2.changeCharacter(mod +':pixelsonic');
 			newCharacter.visible = true;
 			bgspec.visible = true;
 		}
@@ -152,7 +152,7 @@ function stepHit(curStep:Int) {
 			oldCharacter.visible = true;
 			PlayState.dads.push(dad3);
 			PlayState.add(dad3);
-			PlayState.iconP2.changeCharacter('sonicexe:ycrsonic');
+			PlayState.iconP2.changeCharacter(mod + ':ycrsonic');
 
 			dad.scrollFactor.set(1.3, 1);
 			boyfriend.scrollFactor.set(1.3, 1);

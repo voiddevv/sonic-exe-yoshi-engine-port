@@ -1,43 +1,55 @@
 {
 	"songs": [
 		{
+			"difficulties": [
+				"Easy",
+				"Normal",
+				"Hard",
+				"encore"
+			],
 			"displayName": "too slow",
-			"difficulties": [
-				"Easy",
-				"Normal",
-				"Hard",
-				"encore"
-			],
 			"char": "sonicexe",
-			"color": "#0A49CD",
+			"bpm": 135,
 			"name": "too-slow",
-			"bpm": 135
+			"color": "#0A49CD"
 		},
 		{
+			"difficulties": [
+				"Easy",
+				"Normal",
+				"Hard",
+				"encore"
+			],
 			"displayName": "you cant run",
-			"difficulties": [
-				"Easy",
-				"Normal",
-				"Hard",
-				"encore"
-			],
 			"char": "ycrsonic",
-			"color": "#1E5F99",
+			"bpm": 140,
 			"name": "you-cant-run",
-			"bpm": 140
+			"color": "#1E5F99"
 		},
 		{
+			"displayName": "triple trouble",
 			"difficulties": [
 				"Easy",
 				"Normal",
 				"Hard",
 				"encore"
 			],
-			"displayName": "triple trouble",
 			"char": "xeo",
-			"bpm": 146,
+			"color": "#5A1BC5",
 			"name": "triple-trouble",
-			"color": "#5A1BC5"
+			"bpm": 146
+		},
+		{
+			"displayName": "cycles",
+			"difficulties": [
+				"Easy",
+				"Normal",
+				"Hard"
+			],
+			"char": "lord x",
+			"color": "#2E368A",
+			"name": "cycles",
+			"bpm": 156
 		},
 		{
 			"difficulties": [
@@ -45,11 +57,21 @@
 				"Normal",
 				"Hard"
 			],
-			"displayName": "cycles",
-			"char": "lord x",
-			"bpm": 156,
-			"name": "cycles",
-			"color": "#2E368A"
+			"displayName": null,
+			"char": "sonicfun",
+			"bpm": 150,
+			"name": "endless",
+			"color": "#0B24E0"
+		},
+		{
+			"difficulties": [
+				"Normal"
+			],
+			"displayName": null,
+			"char": "sunk",
+			"bpm": 186,
+			"name": "milk",
+			"color": "#2C68AF"
 		}
 	]
 }

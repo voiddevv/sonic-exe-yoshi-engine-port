@@ -29,12 +29,30 @@
 		},
 		{
 			"scripts": [
-				"sonicexe:/stages/lordx stage"
+				"stages/lordx stage"
+			],
+			"difficulties": null,
+			"end_cutscene": null,
+			"cutscene": null,
+			"name": "cycles"
+		},
+		{
+			"scripts": [
+				"sonic-exe-yoshi-engine-port:/stages/endless"
 			],
 			"difficulties": null,
 			"end_cutscene": "",
 			"cutscene": "",
-			"name": "cycles"
+			"name": "endless"
+		},
+		{
+			"scripts": [
+				"sonic-exe-yoshi-engine-port:/stages/milk"
+			],
+			"difficulties": [],
+			"end_cutscene": null,
+			"cutscene": null,
+			"name": "milk"
 		}
 	]
 }

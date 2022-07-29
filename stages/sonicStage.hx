@@ -1,12 +1,14 @@
 //
+var daStatic:FlxSprite = new FlxSprite(0, 0);
+var daJumpscare:FlxSprite = new FlxSprite(0, 0);
+var simplejump:FlxSprite = new FlxSprite().loadGraphic(Paths.image('coolshit/simplejump'));
 
 var stage:Stage = null;
 
 function doJumpscare()
 	{
-		var daJumpscare:FlxSprite = new FlxSprite(0, 0);
 		trace('JUMPSCARE aaaa');
-
+		
 		daJumpscare.frames = Paths.getSparrowAtlas('coolshit/sonicJUMPSCARE');
 		daJumpscare.animation.addByPrefix('jump', 'sonicSPOOK', 24, false);
 
@@ -16,6 +18,7 @@ function doJumpscare()
 		daJumpscare.scale.y = 1.1;
 
 		daJumpscare.y += 370;
+		daJumpscare.visible = true;
 
 		daJumpscare.cameras = [camHUD];
 
@@ -37,7 +40,6 @@ function doSimpleJump()
 	{
 		trace('SIMPLE JUMPSCARE');
 
-		var simplejump:FlxSprite = new FlxSprite().loadGraphic(Paths.image('coolshit/simplejump'));
 
 		simplejump.setGraphicSize(FlxG.width, FlxG.height);
 
@@ -59,9 +61,9 @@ function doSimpleJump()
 
 		// now for static
 
-		var daStatic:FlxSprite = new FlxSprite(0, 0);
+		
 
-		daStatic.frames = Paths.getSparrowAtlas('daSTAT');
+		daStatic.frames = Paths.getSparrowAtlas('coolshit/daSTAT');
 
 		daStatic.setGraphicSize(FlxG.width, FlxG.height);
 
@@ -90,7 +92,6 @@ function doSimpleJump()
 function doStaticSign(lestatic:Int = 0, leopa:Bool = true)
 	{
 		trace('static MOMENT HAHAHAH ' + lestatic);
-		var daStatic:FlxSprite = new FlxSprite(0, 0);
 
 		daStatic.frames = Paths.getSparrowAtlas('coolshit/daSTAT');
 
@@ -126,7 +127,9 @@ function doStaticSign(lestatic:Int = 0, leopa:Bool = true)
 		}
 	}
 function create() {
-		daJumpscare.frames = Paths.getSparrowAtlas('coolshit/sonicJUMPSCARE');	
+	add(daJumpscare);
+	daJumpscare.visible = false;
+	
 	PlayState.boyfriend.y += 25;
 	PlayState.dad.scale.x = 1.1;
 	PlayState.dad.scale.y = 1.1;
@@ -190,13 +193,10 @@ function create() {
 
 						add(sticklol);
 }
-/*function update(elapsed) {
-	stage.update(elapsed);
+function createpost() {
+	add(daJumpscare);
+	daJumpscare.visible = false;
 }
-function beatHit(curBeat) {
-	stage.onBeat();
-}
-*/
 
 function stepHit(curStep:Int) {
 	switch (curStep)
