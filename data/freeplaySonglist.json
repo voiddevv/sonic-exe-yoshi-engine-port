@@ -42,8 +42,6 @@
 		{
 			"displayName": "cycles",
 			"difficulties": [
-				"Easy",
-				"Normal",
 				"Hard"
 			],
 			"char": "lord x",
@@ -53,8 +51,6 @@
 		},
 		{
 			"difficulties": [
-				"Easy",
-				"Normal",
 				"Hard"
 			],
 			"displayName": null,
@@ -72,6 +68,16 @@
 			"bpm": 186,
 			"name": "milk",
 			"color": "#2C68AF"
+		},
+		{
+			"displayName": "too fest",
+			"difficulties": [
+				"Hard"
+			],
+			"char": "sanic",
+			"color": "#2651FD",
+			"name": "too-fest",
+			"bpm": 150
 		}
 	]
 }

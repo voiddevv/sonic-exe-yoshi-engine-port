@@ -1,8 +1,8 @@
 {
 	"arrowColors": null,
 	"camOffset": {
-		"x": -80,
-		"y": -80
+		"x": -140,
+		"y": 50
 	},
 	"globalOffset": {
 		"x": 10,
@@ -22,15 +22,6 @@
 		},
 		{
 			"indices": null,
-			"x": 60,
-			"y": -50,
-			"anim": "Tails DOWN",
-			"loop": false,
-			"name": "singDOWN",
-			"framerate": 24
-		},
-		{
-			"indices": null,
 			"x": 0,
 			"y": -20,
 			"anim": "Tails RIGHT",
@@ -40,11 +31,11 @@
 		},
 		{
 			"indices": null,
-			"x": 20,
-			"y": 30,
-			"anim": "Tails UP",
+			"x": 60,
+			"y": -50,
+			"anim": "Tails DOWN",
 			"loop": false,
-			"name": "singUP",
+			"name": "singDOWN",
 			"framerate": 24
 		},
 		{
@@ -54,6 +45,15 @@
 			"anim": "Tails LEFT",
 			"loop": false,
 			"name": "singLEFT",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 20,
+			"y": 30,
+			"anim": "Tails UP",
+			"loop": false,
+			"name": "singUP",
 			"framerate": 24
 		}
 	],

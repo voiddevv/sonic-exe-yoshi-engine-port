@@ -1,4 +1,6 @@
 //
+
+var pressedEnter:Bool = FlxControls.justPressed.ENTER;
 var Logo:FlxSprite;
 var bg:FlxSprite;
 var titleText:FlxSprite;
@@ -12,6 +14,13 @@ FlxG.sound.play(Paths.sound('TitleLaugh'), 1);
 
 function create() {
 	
+	{
+		while (textGroup.members.length > 0)
+		{
+			credGroup.remove(textGroup.members[0], true);
+			textGroup.remove(textGroup.members[0], true);
+		}
+	}
 
 	bg = new FlxSprite(0, 0);
 	bg.frames = Paths.getSparrowAtlas('titlescreen/NewTitleMenuBG');
@@ -51,6 +60,6 @@ function createpost() {
 }
 
 function update() {
-	if (FlxG.keys.justPressed.ENTER)
+	if (FlxControls.justPressed.ENTER)
 		titleText.animation.play('press');
 }

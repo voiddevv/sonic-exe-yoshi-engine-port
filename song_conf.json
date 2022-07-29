@@ -53,6 +53,15 @@
 			"end_cutscene": null,
 			"cutscene": null,
 			"name": "milk"
+		},
+		{
+			"end_cutscene": null,
+			"cutscene": null,
+			"difficulties": null,
+			"scripts": [
+				"stages/too fest"
+			],
+			"name": "too-fest"
 		}
 	]
 }
