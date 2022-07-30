@@ -14,13 +14,7 @@ FlxG.sound.play(Paths.sound('TitleLaugh'), 1);
 
 function create() {
 	
-	{
-		while (textGroup.members.length > 0)
-		{
-			credGroup.remove(textGroup.members[0], true);
-			textGroup.remove(textGroup.members[0], true);
-		}
-	}
+	
 
 	bg = new FlxSprite(0, 0);
 	bg.frames = Paths.getSparrowAtlas('titlescreen/NewTitleMenuBG');
@@ -56,10 +50,15 @@ function create() {
 
 }
 function createpost() {
-	modswitch('titleState');
+	FlxG.switchState(new ModState("titleState", mod));
 }
 
 function update() {
 	if (FlxControls.justPressed.ENTER)
 		titleText.animation.play('press');
+
+	if (FlxControls.justPressed.)
+		FlxG.switchState(new ModState("titleState", mod));
+		trace('hm')
+
 }
