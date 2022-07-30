@@ -66,3 +66,7 @@ function create(){
 							treething.animation.play('a', true);
 						
 }
+function onMiss(){
+    health -= 0.04;
+    health += 0.125;
+}

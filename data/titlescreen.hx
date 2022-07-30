@@ -57,8 +57,4 @@ function update() {
 	if (FlxControls.justPressed.ENTER)
 		titleText.animation.play('press');
 
-	if (FlxControls.justPressed.)
-		FlxG.switchState(new ModState("titleState", mod));
-		trace('hm')
-
 }
