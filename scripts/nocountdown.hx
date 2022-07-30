@@ -1,4 +1,8 @@
+/*function create(){
+    startSong();
+}*/
 function onCountdown(val:Int) {
+    startingSong = true;
     switch(val) {
         case 3:
           return false;

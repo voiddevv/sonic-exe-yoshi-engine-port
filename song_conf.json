@@ -2,15 +2,6 @@
 	"songs": [
 		{
 			"scripts": [
-				"sonic-exe-yoshi-engine-port:/stages/endless"
-			],
-			"difficulties": null,
-			"end_cutscene": "",
-			"cutscene": "",
-			"name": "endless"
-		},
-		{
-			"scripts": [
 				"stages/too fest"
 			],
 			"difficulties": null,
@@ -49,24 +40,34 @@
 			"name": "triple-trouble"
 		},
 		{
-			"end_cutscene": null,
-			"cutscene": null,
-			"difficulties": null,
 			"scripts": [
 				"sonic-exe-yoshi-engine-port:/stages/milk",
 				"scripts/nocountdown"
 			],
+			"difficulties": null,
+			"end_cutscene": null,
+			"cutscene": null,
 			"name": "milk"
 		},
 		{
-			"end_cutscene": null,
-			"cutscene": null,
-			"difficulties": null,
 			"scripts": [
 				"stages/lordx stage",
 				"scripts/nocountdown"
 			],
+			"difficulties": null,
+			"end_cutscene": null,
+			"cutscene": null,
 			"name": "cycles"
+		},
+		{
+			"scripts": [
+				"sonic-exe-yoshi-engine-port:/stages/endless",
+				"scripts/nocountdown"
+			],
+			"difficulties": null,
+			"end_cutscene": null,
+			"cutscene": null,
+			"name": "endless"
 		}
 	]
 }

@@ -1,5 +1,4 @@
 //
-//var cpustrum = cpuStrums.members[0, 1, 2, 3, 4];
 function doP3JumpKNUCKLES()
 	{
 		trace('SIMPLE JUMPSCARE');
@@ -236,7 +235,6 @@ function stepHit(curStep:Int) {
     				PlayState.add(xeoflip);
     				PlayState.iconP2.changeCharacter(mod + ':xeo');
 					//xeoflip.flipX = true ;
-					xeoflip = PlayState.dad;
 
 					
 					case 2823:
@@ -251,7 +249,7 @@ function stepHit(curStep:Int) {
     				PlayState.boyfriend.destroy();
     				PlayState.boyfriends = [new Boyfriend(466.1 + 200, 685.6 - 250, 'bf')];
     				PlayState.add(PlayState.boyfriend);
-					remove(kun)
+					remove(kun);
 
 					PlayState.add(eggman);
 					dads.push(eggman);

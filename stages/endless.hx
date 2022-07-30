@@ -1,3 +1,23 @@
+var blackFuck:FlxSprite;
+var startCircle:FlxSprite;
+var startText:FlxSprite;
+function createInFront(){
+    var funboppers1ANIM:FlxSprite = new FlxSprite(1126, 903);
+        funboppers1ANIM.frames = Paths.getSparrowAtlas('stages/endless/majin FG1');
+        funboppers1ANIM.animation.addByPrefix('bumpypillar', 'majin front bopper1', 24);
+        funboppers1ANIM.antialiasing = true;
+        funboppers1ANIM.scrollFactor.set(0.8, 0.8);
+        funboppers1ANIM.animation.play('bumpypillar');
+
+        var funboppers2ANIM:FlxSprite = new FlxSprite(-293, 871);
+        funboppers2ANIM.frames = Paths.getSparrowAtlas('stages/endless/majin FG2');
+        funboppers2ANIM.animation.addByPrefix('bumpypillar', 'majin front bopper2', 24);
+        funboppers2ANIM.antialiasing = true;
+        funboppers2ANIM.scrollFactor.set(0.8, 0.8);
+        funboppers2ANIM.animation.play('bumpypillar');
+        add(funboppers1ANIM);
+		add(funboppers2ANIM);
+}
 function one():Void
 	{
 		var one:FlxSprite = new FlxSprite().loadGraphic(Paths.image('stages/endless/one'));
@@ -108,7 +128,7 @@ function create(){
         funbush2.active = false;
         add(funbush2);
 
-        funpillarts1ANIM = new FlxSprite(-169, -167);
+        var funpillarts1ANIM:FlxSprite = new FlxSprite(-169, -167);
         funpillarts1ANIM.frames = Paths.getSparrowAtlas('stages/endless/Majin Boppers Front');
         funpillarts1ANIM.animation.addByPrefix('bumpypillar', 'MajinBop1 instance 1', 24);
         // funpillarts1ANIM.setGraphicSize(Std.int(funpillarts1ANIM.width * 0.7));
@@ -124,30 +144,16 @@ function create(){
         funfloor.active = false;
         add(funfloor);
 
-        funboppers1ANIM = new FlxSprite(1126, 903);
-        funboppers1ANIM.frames = Paths.getSparrowAtlas('stages/endless/majin FG1');
-        funboppers1ANIM.animation.addByPrefix('bumpypillar', 'majin front bopper1', 24);
-        funboppers1ANIM.antialiasing = true;
-        funboppers1ANIM.scrollFactor.set(0.8, 0.8);
-        funboppers1ANIM.animation.play('bumpypillar');
-
-        funboppers2ANIM = new FlxSprite(-293, 871);
-        funboppers2ANIM.frames = Paths.getSparrowAtlas('stages/endless/majin FG2');
-        funboppers2ANIM.animation.addByPrefix('bumpypillar', 'majin front bopper2', 24);
-        funboppers2ANIM.antialiasing = true;
-        funboppers2ANIM.scrollFactor.set(0.8, 0.8);
-        funboppers2ANIM.animation.play('bumpypillar');
+        
 
 
-        add(funboppers1ANIM);
-		add(funboppers2ANIM);
+        
     
 
 }
 function stepHit(curStep:Int){
     switch curStep{
         case 888:
-        camFollow.setPosition(GameDimensions.width / 2 + 50, GameDimensions.height / 4 * 3 + 280);
         FlxTween.tween(FlxG.camera, {zoom: FlxG.camera.zoom + 0.3}, 0.7, {ease: FlxEase.cubeInOut});
         three();
     case 891:
@@ -160,10 +166,6 @@ function stepHit(curStep:Int){
         camLocked = true;
         FlxTween.tween(FlxG.camera, {zoom: defaultCamZoom}, 0.7, {ease: FlxEase.cubeInOut});
         gofun();
-        SONG.noteStyle = 'majinNOTES';
-        removeStatics();
-        generateStaticArrows(0, false);
-        generateStaticArrows(1, false);
     }
     
 }
