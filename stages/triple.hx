@@ -161,7 +161,7 @@ function createPost() {
 	cpuStrums.members[0].x += 50;
 	cpuStrums.members[4].x -= 65;
 	cpuStrums.members[3].x -= 65;
-	camFollowLerp = 0.10;
+	camFollowLerp = 0.12;
 	//cpuStrum.x -= 700;
 	PlayState.gf.visible = false;
 }
@@ -201,7 +201,8 @@ function stepHit(curStep:Int) {
 			//xeo.destroy();
 			remove(xeo);
 			
-
+			dad.x = 1000 + 100 - 206;
+			dad.y = 340 + 44;
 			kun = new Character(1300 + 100 - 206, 260 + 44, mod + ':kun');
     		dads.push(kun);
     		PlayState.add(kun);
@@ -216,6 +217,7 @@ function stepHit(curStep:Int) {
 			
 			doP3JumpKNUCKLES();
 			case 2320:
+				remove(kun);
 					
 					FlxTween.tween(FlxG.camera, {zoom: 0.9}, 2, {ease: FlxEase.cubeOut});
 					defaultCamZoom = 0.9;
@@ -229,8 +231,10 @@ function stepHit(curStep:Int) {
     				PlayState.boyfriends = [new Boyfriend(502.45 - 350, 370.45, mod + ':bf2flip')];
     				PlayState.add(PlayState.boyfriend);
 					//boyfriend.flipX = true;
-
-					xeoflip = new Character(1300 - 250, -94.75 + 100, mod + ':xeoflip');
+					dad.x = 1375 - 250;
+					dad.y = -94.75 + 200;
+					dad.visible = false;
+					xeoflip = new Character(1000 - 250, -94.75 + 100, mod + ':xeoflip');
     				dads.push(xeoflip);
     				PlayState.add(xeoflip);
     				PlayState.iconP2.changeCharacter(mod + ':xeo');
@@ -250,7 +254,8 @@ function stepHit(curStep:Int) {
     				PlayState.boyfriends = [new Boyfriend(466.1 + 200, 685.6 - 250, 'bf')];
     				PlayState.add(PlayState.boyfriend);
 					remove(kun);
-
+					dad.x = -180;
+					dad.y += 190;
 					PlayState.add(eggman);
 					dads.push(eggman);
     				PlayState.iconP2.changeCharacter(mod + ':eggman');
@@ -269,15 +274,24 @@ function stepHit(curStep:Int) {
 
 					p3staticbg.visible = false;
 					
-					
+					remove(xeoflip);
 
 				case 2887, 3015, 4039:
 					eggman.playAnim('laugh', true);
 
 				case 4111:
 				p3staticbg.visible = true;
-				
-
+				remove(eggman);
+				xeo = new Character(20 - 200, -94.75 + 100, mod + ':xeo');
+    			PlayState.add(xeo);
+    			PlayState.iconP2.changeCharacter(mod + ':xeo');
+				dads.push(xeo);
+				PlayState.remove(PlayState.boyfriend);
+    			PlayState.boyfriend.destroy();
+				dad.x = 140 - 200;
+				dad.y = -115.75 + 225;
+    			PlayState.boyfriends = [new Boyfriend(502.45 + 200, 370.45, mod + ':bf2')];
+    			PlayState.add(PlayState.boyfriend);
 	}
 
 }
