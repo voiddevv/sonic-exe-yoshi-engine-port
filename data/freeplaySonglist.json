@@ -78,6 +78,26 @@
 			"color": "#2651FD",
 			"name": "too-fest",
 			"bpm": 150
+		},
+		{
+			"displayName": null,
+			"difficulties": [
+				"Hard"
+			],
+			"char": "faker",
+			"color": "#040C5D",
+			"name": "faker",
+			"bpm": 150
+		},
+		{
+			"bpm": 150,
+			"difficulties": [
+				"Hard"
+			],
+			"displayName": "black sun",
+			"char": "exe",
+			"name": "black-sun",
+			"color": "#0D123F"
 		}
 	]
 }
