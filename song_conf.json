@@ -2,42 +2,6 @@
 	"songs": [
 		{
 			"scripts": [
-				"stages/triple"
-			],
-			"difficulties": null,
-			"end_cutscene": null,
-			"cutscene": null,
-			"name": "triple-trouble"
-		},
-		{
-			"scripts": [
-				"stages/sonicStage"
-			],
-			"difficulties": null,
-			"end_cutscene": null,
-			"cutscene": null,
-			"name": "too-slow"
-		},
-		{
-			"scripts": [
-				"stages/sonicexeStage"
-			],
-			"difficulties": null,
-			"end_cutscene": null,
-			"cutscene": null,
-			"name": "you-cant-run"
-		},
-		{
-			"scripts": [
-				"stages/lordx stage"
-			],
-			"difficulties": null,
-			"end_cutscene": null,
-			"cutscene": null,
-			"name": "cycles"
-		},
-		{
-			"scripts": [
 				"sonic-exe-yoshi-engine-port:/stages/endless"
 			],
 			"difficulties": null,
@@ -47,11 +11,51 @@
 		},
 		{
 			"scripts": [
-				"sonic-exe-yoshi-engine-port:/stages/milk"
+				"stages/too fest"
 			],
-			"difficulties": [],
+			"difficulties": null,
 			"end_cutscene": null,
 			"cutscene": null,
+			"name": "too-fest"
+		},
+		{
+			"scripts": [
+				"stages/sonicStage",
+				"scripts/nocountdown"
+			],
+			"difficulties": null,
+			"end_cutscene": null,
+			"cutscene": null,
+			"name": "too-slow"
+		},
+		{
+			"scripts": [
+				"stages/sonicexeStage",
+				"scripts/nocountdown"
+			],
+			"difficulties": null,
+			"end_cutscene": null,
+			"cutscene": null,
+			"name": "you-cant-run"
+		},
+		{
+			"scripts": [
+				"stages/triple",
+				"scripts/nocountdown"
+			],
+			"difficulties": null,
+			"end_cutscene": null,
+			"cutscene": null,
+			"name": "triple-trouble"
+		},
+		{
+			"end_cutscene": null,
+			"cutscene": null,
+			"difficulties": null,
+			"scripts": [
+				"sonic-exe-yoshi-engine-port:/stages/milk",
+				"scripts/nocountdown"
+			],
 			"name": "milk"
 		},
 		{
@@ -59,9 +63,10 @@
 			"cutscene": null,
 			"difficulties": null,
 			"scripts": [
-				"stages/too fest"
+				"stages/lordx stage",
+				"scripts/nocountdown"
 			],
-			"name": "too-fest"
+			"name": "cycles"
 		}
 	]
 }
