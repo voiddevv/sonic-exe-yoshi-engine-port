@@ -221,7 +221,6 @@ function stepHit(curStep:Int) {
 					
 					FlxTween.tween(FlxG.camera, {zoom: 0.9}, 2, {ease: FlxEase.cubeOut});
 					defaultCamZoom = 0.9;
-					//PlayState.kun.destroy();
 
 					p3staticbg.visible = true;
 					

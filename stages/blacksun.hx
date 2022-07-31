@@ -1,3 +1,5 @@
+//
+var heatlhDrop:Float = 0.0000000000000000000001;
 function create(){
     defaultCamZoom = 0.9;
 
@@ -5,10 +7,12 @@ function create(){
                         boyfriend.y += 100;
                         gf.x += 430;
                         gf.y += 170;
+                        trace(heatlhDrop);
 
-
-                        var vgblack:FlxSprite = new FlxSprite().loadGraphic(Paths.image('stages/exestage/black_vignette'));
-			            var tentas:FlxSprite = new FlxSprite().loadGraphic(Paths.image('stages/exestage/tentacles_black'));
+                        var vgblack:FlxSprite; 
+                        vgblack = new FlxSprite().loadGraphic(Paths.image('stages/exestage/black_vignette'));
+			            var tentas:FlxSprite;
+                        tentas = new FlxSprite().loadGraphic(Paths.image('stages/exestage/tentacles_black'));
 			            tentas.alpha = 0;
 			            vgblack.alpha = 0;
 			            vgblack.cameras = [camHUD];
@@ -61,12 +65,27 @@ function create(){
 						tails.scrollFactor.set(1, 1);
 						add(tails);
 
+						note.enableRating = false;
 						
 						
 							treething.animation.play('a', true);
 						
 }
+
+function stepHit(curstep:Int){
+    heatlhDrop = 0.004; // this is the default drain, imma just add a 0 to it :troll:.
+					health -= heatlhDrop;
+					trace(health);
+    //vgblack.alpha = 1 - (health / 2);
+    //tentas.alpha = 1 - (health / 2);
+    
+}
 function onMiss(){
     health -= 0.04;
     health += 0.125;
+	
+}
+function onPlayerHit(){
+		health -= 0.0175;
+    trace('hp ' + health);
 }

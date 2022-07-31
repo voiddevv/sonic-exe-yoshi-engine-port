@@ -79,12 +79,12 @@
 			"name": "faker"
 		},
 		{
-			"end_cutscene": null,
-			"cutscene": null,
-			"difficulties": null,
 			"scripts": [
 				"stages/blacksun"
 			],
+			"difficulties": null,
+			"end_cutscene": null,
+			"cutscene": null,
 			"name": "black-sun"
 		}
 	]
