@@ -1,103 +1,113 @@
 {
 	"songs": [
 		{
-			"difficulties": [
-				"Easy",
-				"Normal",
-				"Hard",
-				"encore"
-			],
 			"displayName": "too slow",
+			"difficulties": [
+				"Easy",
+				"Normal",
+				"Hard",
+				"encore"
+			],
 			"char": "sonicexe",
-			"bpm": 135,
+			"color": "#0A49CD",
 			"name": "too-slow",
-			"color": "#0A49CD"
+			"bpm": 135
 		},
 		{
-			"difficulties": [
-				"Easy",
-				"Normal",
-				"Hard",
-				"encore"
-			],
 			"displayName": "you cant run",
-			"char": "ycrsonic",
-			"bpm": 140,
-			"name": "you-cant-run",
-			"color": "#1E5F99"
-		},
-		{
-			"displayName": "triple trouble",
 			"difficulties": [
 				"Easy",
 				"Normal",
 				"Hard",
 				"encore"
 			],
-			"char": "xeo",
-			"color": "#5A1BC5",
-			"name": "triple-trouble",
-			"bpm": 146
+			"char": "ycrsonic",
+			"color": "#1E5F99",
+			"name": "you-cant-run",
+			"bpm": 140
 		},
 		{
-			"displayName": "cycles",
+			"difficulties": [
+				"Easy",
+				"Normal",
+				"Hard",
+				"encore"
+			],
+			"displayName": "triple trouble",
+			"char": "xeo",
+			"bpm": 146,
+			"name": "triple-trouble",
+			"color": "#5A1BC5"
+		},
+		{
 			"difficulties": [
 				"Hard"
 			],
+			"displayName": "cycles",
 			"char": "lord x",
-			"color": "#2E368A",
+			"bpm": 156,
 			"name": "cycles",
-			"bpm": 156
+			"color": "#2E368A"
+		},
+		{
+			"displayName": null,
+			"difficulties": [
+				"Hard"
+			],
+			"char": "sonicfun",
+			"color": "#0B24E0",
+			"name": "endless",
+			"bpm": 150
+		},
+		{
+			"displayName": null,
+			"difficulties": [
+				"Normal"
+			],
+			"char": "sunk",
+			"color": "#2C68AF",
+			"name": "milk",
+			"bpm": 186
+		},
+		{
+			"difficulties": [
+				"Hard"
+			],
+			"displayName": "too fest",
+			"char": "sanic",
+			"bpm": 150,
+			"name": "too-fest",
+			"color": "#2651FD"
 		},
 		{
 			"difficulties": [
 				"Hard"
 			],
 			"displayName": null,
-			"char": "sonicfun",
+			"char": "faker",
 			"bpm": 150,
-			"name": "endless",
-			"color": "#0B24E0"
+			"name": "faker",
+			"color": "#040C5D"
+		},
+		{
+			"displayName": "black sun",
+			"difficulties": [
+				"Hard"
+			],
+			"char": "exe",
+			"color": "#0D123F",
+			"name": "black-sun",
+			"bpm": 150
 		},
 		{
 			"difficulties": [
 				"Normal"
 			],
 			"displayName": null,
-			"char": "sunk",
-			"bpm": 186,
-			"name": "milk",
-			"color": "#2C68AF"
-		},
-		{
-			"displayName": "too fest",
-			"difficulties": [
-				"Hard"
-			],
-			"char": "sanic",
-			"color": "#2651FD",
-			"name": "too-fest",
-			"bpm": 150
-		},
-		{
-			"displayName": null,
-			"difficulties": [
-				"Hard"
-			],
-			"char": "faker",
-			"color": "#040C5D",
-			"name": "faker",
-			"bpm": 150
-		},
-		{
+			"char": "tailssunshine",
 			"bpm": 150,
-			"difficulties": [
-				"Hard"
-			],
-			"displayName": "black sun",
-			"char": "exe",
-			"name": "black-sun",
-			"color": "#0D123F"
+			"name": "sunshine",
+			"color": "#E86D2C"
 		}
 	]
 }

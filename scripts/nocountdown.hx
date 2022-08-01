@@ -1,6 +1,4 @@
-/*function create(){
-    startSong();
-}*/
+//
 function onCountdown(val:Int) {
     startingSong = true;
     switch(val) {
@@ -13,4 +11,5 @@ function onCountdown(val:Int) {
         case 0:
             return false;
     }
+    
 }

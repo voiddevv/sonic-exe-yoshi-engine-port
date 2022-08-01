@@ -1,5 +1,5 @@
 //
-var heatlhDrop:Float = 0.0000000000000000000001;
+var heatlhDrop:Float = 0.00001;
 function create(){
     defaultCamZoom = 0.9;
 
@@ -72,13 +72,22 @@ function create(){
 						
 }
 
-function stepHit(curstep:Int){
-    heatlhDrop = 0.004; // this is the default drain, imma just add a 0 to it :troll:.
-					health -= heatlhDrop;
-					trace(health);
-    //vgblack.alpha = 1 - (health / 2);
-    //tentas.alpha = 1 - (health / 2);
+var ccap;
+
+function update(elapsed:Float){
+	ccap = combo;
+	if (combo > 40)
+		ccap = 40;
+
+	heatlhDrop = 0.0000001; // this is the default drain, imma just add a 0 to it :troll:.
+	
+	health -= heatlhDrop * (500 / ((ccap + 1) / 8) * ((misses +
+		1) / 1.9)); // alright so this is the code for the healthdrain, also i did + 1 cus i you were to multiply with 0.... yea
     
+}
+function stepHit(curStep:Int) {
+	trace(health);
+	trace(heatlhDrop);
 }
 function onMiss(){
     health -= 0.04;
@@ -86,6 +95,6 @@ function onMiss(){
 	
 }
 function onPlayerHit(){
-		health -= 0.0175;
+		health -= 0.020;
     trace('hp ' + health);
 }

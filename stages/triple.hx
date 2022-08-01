@@ -227,13 +227,13 @@ function stepHit(curStep:Int) {
 
 					PlayState.remove(PlayState.boyfriend);
     				PlayState.boyfriend.destroy();
-    				PlayState.boyfriends = [new Boyfriend(502.45 - 350, 370.45, mod + ':bf2flip')];
+    				PlayState.boyfriends = [new Boyfriend(702.45 - 350, 370.45, mod + ':bf2flip')];
     				PlayState.add(PlayState.boyfriend);
 					//boyfriend.flipX = true;
-					dad.x = 1375 - 250;
-					dad.y = -94.75 + 200;
+					dad.x = 1200 - 250;
+					dad.y = -94.75 + 225;
 					dad.visible = false;
-					xeoflip = new Character(1000 - 250, -94.75 + 100, mod + ':xeoflip');
+					xeoflip = new Character(750 - 250, -94.75 + 100, mod + ':xeoflip');
     				dads.push(xeoflip);
     				PlayState.add(xeoflip);
     				PlayState.iconP2.changeCharacter(mod + ':xeo');
@@ -251,10 +251,11 @@ function stepHit(curStep:Int) {
 					PlayState.remove(PlayState.boyfriend);
     				PlayState.boyfriend.destroy();
     				PlayState.boyfriends = [new Boyfriend(466.1 + 200, 685.6 - 250, 'bf')];
+					boyfriend.y -= 350;	
     				PlayState.add(PlayState.boyfriend);
 					remove(kun);
-					dad.x = -180;
-					dad.y += 190;
+					dad.x = -100;
+					dad.y = 275;
 					PlayState.add(eggman);
 					dads.push(eggman);
     				PlayState.iconP2.changeCharacter(mod + ':eggman');
@@ -287,7 +288,7 @@ function stepHit(curStep:Int) {
 				dads.push(xeo);
 				PlayState.remove(PlayState.boyfriend);
     			PlayState.boyfriend.destroy();
-				dad.x = 140 - 200;
+				dad.x = 140 -350;
 				dad.y = -115.75 + 225;
     			PlayState.boyfriends = [new Boyfriend(502.45 + 200, 370.45, mod + ':bf2')];
     			PlayState.add(PlayState.boyfriend);

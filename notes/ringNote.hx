@@ -10,15 +10,15 @@ function create() {
 
     switch(note.noteData % PlayState.song.keyNumber) {
         case 0:
-            note.animation.addByPrefix('scroll', "space press");
+            note.animation.addByPrefix('scroll', "gold");
         case 1:
-            note.animation.addByPrefix('scroll', "space press");
+            note.animation.addByPrefix('scroll', "gold");
         case 2:
             note.animation.addByPrefix('scroll', "gold");
         case 3:
-            note.animation.addByPrefix('scroll', "space press");
+            note.animation.addByPrefix('scroll', "gold");
         case 4:
-            note.animation.addByPrefix('scroll', "space press");
+            note.animation.addByPrefix('scroll', "gold");
     }
 
 

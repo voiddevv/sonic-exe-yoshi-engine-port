@@ -86,6 +86,15 @@
 			"end_cutscene": null,
 			"cutscene": null,
 			"name": "black-sun"
+		},
+		{
+			"scripts": [
+				"stages/sunshine"
+			],
+			"difficulties": null,
+			"end_cutscene": null,
+			"cutscene": null,
+			"name": "sunshine"
 		}
 	]
 }
