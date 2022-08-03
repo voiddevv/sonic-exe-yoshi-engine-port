@@ -95,6 +95,15 @@
 			"end_cutscene": null,
 			"cutscene": null,
 			"name": "sunshine"
+		},
+		{
+			"end_cutscene": null,
+			"cutscene": null,
+			"difficulties": null,
+			"scripts": [
+				"stages/chamber"
+			],
+			"name": "chaos"
 		}
 	]
 }

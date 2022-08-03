@@ -89,8 +89,8 @@ function doP3Static()
 	}
 
 	//
-var tails:Character;
-var xeo:Character = new Character(20 - 200, -94.75 + 100, mod + ':xeo');
+var xeo:Character = new Character(-900, 950, mod + ':xeo');
+
 var xeoflip:Character;
 var bf2flip:Character;
 var bf2:Chrarcter;
@@ -154,7 +154,11 @@ function create() {
 						bgspec.scale.x = 1.2;
 						bgspec.scale.y = 1.2;
 						add(bgspec);
-}
+
+						PlayState.add(xeo);
+						dads.push(xeo);
+					}
+
 function createPost() {
 	cpuStrums.members[2].visible = false;
 	cpuStrums.members[1].x += 50;
@@ -181,10 +185,10 @@ function stepHit(curStep:Int) {
 			remove(dad);
 			dads.remove(dad);
     		//xeo = new Character(20 - 200, -94.75 + 100, mod + ':xeo');
-			PlayState.dad = (xeo);
-    		dads.push(xeo);
+			xeo.x = -180;
+			xeo.y = 5;
+    		
 			xeo.visible = true;
-    		PlayState.add(xeo);
     		PlayState.iconP2.changeCharacter(mod + ':xeo');
 
 
@@ -199,10 +203,10 @@ function stepHit(curStep:Int) {
 			defaultCamZoom = 1.1;
 			p3staticbg.visible = false;
 			//xeo.destroy();
-			remove(xeo);
-			
-			dad.x = 1000 + 100 - 206;
-			dad.y = 340 + 44;
+			xeo.visible = false;
+			dad.visible = false;			
+			dad.x = 1100 + 100 - 206;
+			dad.y = 520 + 44;
 			kun = new Character(1300 + 100 - 206, 260 + 44, mod + ':kun');
     		dads.push(kun);
     		PlayState.add(kun);
@@ -231,7 +235,7 @@ function stepHit(curStep:Int) {
     				PlayState.add(PlayState.boyfriend);
 					//boyfriend.flipX = true;
 					dad.x = 1200 - 250;
-					dad.y = -94.75 + 225;
+					dad.y = -94.75 + 300;
 					dad.visible = false;
 					xeoflip = new Character(750 - 250, -94.75 + 100, mod + ':xeoflip');
     				dads.push(xeoflip);
@@ -288,8 +292,8 @@ function stepHit(curStep:Int) {
 				dads.push(xeo);
 				PlayState.remove(PlayState.boyfriend);
     			PlayState.boyfriend.destroy();
-				dad.x = 140 -350;
-				dad.y = -115.75 + 225;
+				dad.x = 450 -350;
+				dad.y = -100.75 + 225;
     			PlayState.boyfriends = [new Boyfriend(502.45 + 200, 370.45, mod + ':bf2')];
     			PlayState.add(PlayState.boyfriend);
 	}

@@ -22,8 +22,17 @@ function create() {
 function stepHit(curStep:Int) {
     switch curStep{
         case 588:
+        healthBarBG.visible = false;
+        healthBar.visible = false;
+        iconP1.visible = false;
+        iconP2.visible = false;
+        scoreTxt.visible = false;
         bgspec.visible = false;
         boyfriend.visible = false;
+        //timebar.visible = false;
+        {
+            spr.alpha = 0;
+        };
         remove(dad);
         dads.push(dad2);
 		dad2.visible = true;

@@ -10,22 +10,22 @@ function create() {
 
     switch(note.noteData % PlayState.song.keyNumber) {
         case 0:
-            note.animation.addByPrefix('scroll', "gold");
+            note.animation.addByPrefix('scroll', "gold0");
         case 1:
-            note.animation.addByPrefix('scroll', "gold");
+            note.animation.addByPrefix('scroll', "gold0");
         case 2:
-            note.animation.addByPrefix('scroll', "gold");
+            note.animation.addByPrefix('scroll', "gold0");
         case 3:
-            note.animation.addByPrefix('scroll', "gold");
+            note.animation.addByPrefix('scroll', "gold0");
         case 4:
-            note.animation.addByPrefix('scroll', "gold");
+            note.animation.addByPrefix('scroll', "gold0");
     }
 
 
     note.setGraphicSize(Std.int(note.width * 0.7));
     note.updateHitbox();
     note.antialiasing = true;
-    note.splashColor = 0x00000000;
+    note.splashColor = 0xFFF0EC00;
 
     note.animation.play("scroll");
 }

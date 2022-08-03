@@ -1,6 +1,12 @@
 var blackFuck:FlxSprite;
 var startCircle:FlxSprite;
 var startText:FlxSprite;
+var spinArray:Array<Int>;
+spinArray = [
+    272, 276, 336, 340, 400, 404, 464, 468, 528, 532, 592, 596, 656, 660, 720, 724, 784, 788, 848, 852, 912, 916, 976, 980, 1040, 1044, 1104, 1108,
+    1424, 1428, 1488, 1492, 1552, 1556, 1616, 1620
+];
+
 function createInFront(){
     var funboppers1ANIM:FlxSprite = new FlxSprite(1126, 903);
         funboppers1ANIM.frames = Paths.getSparrowAtlas('stages/endless/majin FG1');
