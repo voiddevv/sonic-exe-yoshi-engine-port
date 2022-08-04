@@ -1,8 +1,23 @@
-import haxe.macro.Expr.Case;
 
 //
 function create() {
     defaultCamZoom = .7;
+
+
+    var dad1:Character = new Character(0, 0, 'fleetway-extras');
+	dad1.alpha = 1;
+	add(dad1);
+	remove(dad1);
+
+	var dad2:Character = new Character(0, 0, 'fleetway-extras2');
+	dad2.alpha = 1;
+	add(dad2);
+	remove(dad2);
+
+	var dad3:Character = new Character(0, 0, 'fleetway-extras3');
+	dad3.alpha = 1;
+	add(dad3);
+	remove(dad3);
 
    var wall = new FlxSprite(-2379.05, -1211.1);
     wall.frames = Paths.getSparrowAtlas('stages/Chamber/Wall');
@@ -83,7 +98,7 @@ function create() {
     
     porker.scrollFactor.set(1.4, 1);
     porker.antialiasing = true;
-      
+    gf.visible = false;
 }
 
 function stepHit(curStep:Int) {

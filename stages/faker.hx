@@ -1,12 +1,20 @@
 import flixel.FlxCamera;
 import flixel.FlxBasic;
-var daStatic:FlxSprite = new FlxSprite(0, 0);
-var camHUD2:FlxCamera;
-camHUD2 = new FlxCamera(0, 0);
 
-FlxG.cameras.add(camHUD2);
+				
+				
+var daStatic:FlxSprite = new FlxSprite(0, 0);
+var fakertransform:FlxSprite = new FlxSprite(100 - 10000, 100 - 10000);
+fakertransform.frames = Paths.getSparrowAtlas('stages/faker/Faker_Transformation');
+fakertransform.animation.addByPrefix('1', 'TransformationRIGHT instance 1');
+fakertransform.animation.addByPrefix('2', 'TransformationLEFT instance 1');
+fakertransform.animation.addByPrefix('3', 'TransformationUP instance 1');
+fakertransform.animation.addByPrefix('4', 'TransformationDOWN instance 1');
+fakertransform.alpha = 0;
+
 function doStaticSign(lestatic:Int = 0, leopa:Bool = true)
-	{
+	{	
+		add(fakertransform);
 		trace('static MOMENT HAHAHAH ' + lestatic);
 
 		daStatic.frames = Paths.getSparrowAtlas('coolshit/daSTAT');
@@ -43,6 +51,7 @@ function doStaticSign(lestatic:Int = 0, leopa:Bool = true)
 		}
 	}
 function create(){
+	
     gf.x += 200;
 	gf.y += 100;
 	dad.scrollFactor.set(1.25, 1);
@@ -134,14 +143,8 @@ function create(){
 						flower2.scale.y = .9;
 						add(flower2);
 }
-var fakertransform:FlxSprite;
-fakertransform = new FlxSprite(100 - 10000, 100 - 10000);
-				fakertransform.frames = Paths.getSparrowAtlas('stages/faker/Faker_Transformation');
-				fakertransform.animation.addByPrefix('1', 'TransformationRIGHT instance 1');
-				fakertransform.animation.addByPrefix('2', 'TransformationLEFT instance 1');
-				fakertransform.animation.addByPrefix('3', 'TransformationUP instance 1');
-				fakertransform.animation.addByPrefix('4', 'TransformationDOWN instance 1');
-				fakertransform.alpha = 0;
+
+
 function stepHit(curStep:Int){
     switch (curStep)
 			{
@@ -151,7 +154,7 @@ function stepHit(curStep:Int){
 				case 768:
 					FlxTween.tween(camHUD, {alpha: 0}, 1);
 				case 801: // 800
-					add(fakertransform);
+					
 					fakertransform.setPosition(dad.getGraphicMidpoint().x - 460, dad.getGraphicMidpoint().y - 700);
 					fakertransform.x += 20;
 					fakertransform.y += 128;

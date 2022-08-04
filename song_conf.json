@@ -41,16 +41,6 @@
 		},
 		{
 			"scripts": [
-				"sonic-exe-yoshi-engine-port:/stages/milk",
-				"scripts/nocountdown"
-			],
-			"difficulties": null,
-			"end_cutscene": null,
-			"cutscene": null,
-			"name": "milk"
-		},
-		{
-			"scripts": [
 				"stages/lordx stage",
 				"scripts/nocountdown"
 			],
@@ -58,16 +48,6 @@
 			"end_cutscene": null,
 			"cutscene": null,
 			"name": "cycles"
-		},
-		{
-			"scripts": [
-				"sonic-exe-yoshi-engine-port:/stages/endless",
-				"scripts/nocountdown"
-			],
-			"difficulties": null,
-			"end_cutscene": null,
-			"cutscene": null,
-			"name": "endless"
 		},
 		{
 			"scripts": [
@@ -97,13 +77,33 @@
 			"name": "sunshine"
 		},
 		{
-			"end_cutscene": null,
-			"cutscene": null,
-			"difficulties": null,
 			"scripts": [
 				"stages/chamber"
 			],
+			"difficulties": null,
+			"end_cutscene": null,
+			"cutscene": null,
 			"name": "chaos"
+		},
+		{
+			"scripts": [
+				"stages/endless",
+				"scripts/nocountdown"
+			],
+			"difficulties": null,
+			"end_cutscene": null,
+			"cutscene": null,
+			"name": "endless"
+		},
+		{
+			"scripts": [
+				"stages/milk",
+				"scripts/nocountdown"
+			],
+			"difficulties": null,
+			"end_cutscene": null,
+			"cutscene": null,
+			"name": "milk"
 		}
 	]
 }

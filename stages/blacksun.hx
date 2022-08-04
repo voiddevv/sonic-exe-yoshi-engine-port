@@ -1,5 +1,6 @@
 //
 var heatlhDrop:Float = 0.00001;
+health = 2;
 function create(){
     defaultCamZoom = 0.9;
 
@@ -7,7 +8,6 @@ function create(){
                         boyfriend.y += 100;
                         gf.x += 430;
                         gf.y += 170;
-                        trace(heatlhDrop);
 
                         var vgblack:FlxSprite; 
                         vgblack = new FlxSprite().loadGraphic(Paths.image('stages/exestage/black_vignette'));
@@ -19,7 +19,7 @@ function create(){
 			            tentas.cameras = [camHUD];
 			            add(vgblack);
 			            add(tentas);
-			            health = 2;
+			            
                         var sSKY:FlxSprite = new FlxSprite(-414, -240.8).loadGraphic(Paths.image('stages/exestage/sky'));
 						sSKY.antialiasing = true;
 						sSKY.scrollFactor.set(1, 1);

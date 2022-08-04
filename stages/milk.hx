@@ -1,14 +1,15 @@
+var sunk:FlxSprite = new FlxSprite().loadGraphic(Paths.image('stages/sunk/SunkBG'));
 function create() {
     defaultCamZoom = 0.9;
 
-						var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('stages/sunk/SunkBG'));
-						bg.setGraphicSize(Std.int(bg.width * 0.8));
-						bg.antialiasing = true;
-						bg.scrollFactor.set(.91, .91);
-						bg.x -= 670;
-						bg.y -= 260;
-						bg.active = false;
-						add(bg);
+						
+						sunk.setGraphicSize(Std.int(sunk.width * 0.8));
+						sunk.antialiasing = true;
+						sunk.scrollFactor.set(.91, .91);
+						sunk.x -= 670;
+						sunk.y -= 260;
+						sunk.active = false;
+						add(sunk);
                         boyfriend.x -= 100;
 				        dad.x = -180;
 				        dad.y = 200;
@@ -17,6 +18,18 @@ function create() {
                         gf.visible = false;
 }
 function stepHit(curStep:Int) {
+    switch (curStep){
+        case 2286:
+            camHUD.visible = false;
+            boyfriend.visible = false;
+            dad.visible = false;
+            sunk.visible = false;
+            var pat:FlxSprite = new FlxSprite().loadGraphic(Paths.image('coolshit/pat'));
+            pat.x = 600;
+            pat.y = 400;
+            add (pat);
+    }
+    
     if (curStep == 538 || curStep == 2273)
         {
             var sponge:FlxSprite = new FlxSprite(dad.getGraphicMidpoint().x - 200,
