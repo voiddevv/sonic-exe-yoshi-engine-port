@@ -1,6 +1,9 @@
 //
 var daStatic:FlxSprite = new FlxSprite(0, 0);
 var daJumpscare:FlxSprite = new FlxSprite(0, 0);
+daJumpscare.frames = Paths.getSparrowAtlas('coolshit/sonicJUMPSCARE');
+daJumpscare.animation.addByPrefix('jump', 'sonicSPOOK', 24, false);
+
 var simplejump:FlxSprite = new FlxSprite().loadGraphic(Paths.image('coolshit/simplejump'));
 
 var stage:Stage = null;
@@ -18,7 +21,7 @@ function doJumpscare()
 		daJumpscare.scale.y = 1.1;
 
 		daJumpscare.y += 370;
-		daJumpscare.visible = true;
+		daJumpscare.alpha = 1;
 
 		daJumpscare.cameras = [camHUD];
 
@@ -128,7 +131,9 @@ function doStaticSign(lestatic:Int = 0, leopa:Bool = true)
 	}
 function create() {
 	add(daJumpscare);
-	daJumpscare.visible = false;
+	daJumpscare.animation.play('jump');
+	daJumpscare.alpha = 0.1;
+	daJumpscare.visible = true;
 	
 	PlayState.boyfriend.y += 25;
 	PlayState.dad.scale.x = 1.1;

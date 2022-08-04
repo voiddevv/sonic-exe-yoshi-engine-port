@@ -37,7 +37,7 @@ function doStaticSign(lestatic:Int = 0, leopa:Bool = true)
 		if (leopa)
 		{
 			if (daStatic.alpha != 0)
-				daStatic.alpha = FlxG.random.float(0.1, 0.5);
+				daStatic.alpha = FlxG.random.float(0.1, 1);
 		}
 		else
 			daStatic.alpha = 0.6;

@@ -101,6 +101,10 @@ function create() {
     gf.visible = false;
 }
 
+function onCountDown() {
+    
+}
+
 function stepHit(curStep:Int) {
     switch curStep{
         case 20:

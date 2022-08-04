@@ -48,6 +48,8 @@ var stage:Stage = null;
 function create() {
 	//stage = loadStage(newCharacter.visible = false;llFactor.set(1.37, 1);
 				boyfriend.scrollFactor.set(1.37, 1);
+				gf.scrollFactor.set(1.37, 1);
+				dad.scrollFactor.set(1.37, 1);
 				gf.x = 635.5 - 50 - 100;
 				gf.y = 265.1 - 250;
 

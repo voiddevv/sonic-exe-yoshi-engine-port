@@ -4,8 +4,12 @@
 
 
  //enableMiss(true);
-
+ daNoteStatic = new FlxSprite(0, 0);
+ daNoteStatic.frames = Paths.getSparrowAtlas('notes/hitStatic');
+ daNoteStatic.animation.addByPrefix('static', 'staticANIMATION', 24, false);
 function create() {
+	daNoteStatic.animation.play('static', true);
+	daNoteStatic.alpha = 0.0000001;
     note.frames = Paths.getSparrowAtlas("notes/staticNotes");
 
     switch(note.noteData % PlayState.song.keyNumber) {
@@ -25,7 +29,7 @@ function create() {
     note.setGraphicSize(Std.int(note.width * 0.7));
     note.updateHitbox();
     note.antialiasing = true;
-    note.splashColor = 0xFFE90000;
+    note.splashColor = 0xFFFF0000;
 
     note.animation.play("scroll");
 }
@@ -35,8 +39,7 @@ function onMiss() {
     
 	trace('lol you missed the static note!');
 		health -= 0.35;	
-		daNoteStatic = new FlxSprite(0, 0);
-		daNoteStatic.frames = Paths.getSparrowAtlas('notes/hitStatic');
+		
 
 		daNoteStatic.setGraphicSize(FlxG.width, FlxG.height);
 
@@ -44,7 +47,8 @@ function onMiss() {
 
 		daNoteStatic.cameras = [camHUD];
 
-		daNoteStatic.animation.addByPrefix('static', 'staticANIMATION', 24, false);
+		daNoteStatic.alpha = 1;
+		
 
 		daNoteStatic.animation.play('static', true);
 
