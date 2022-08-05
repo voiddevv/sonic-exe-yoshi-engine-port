@@ -46,8 +46,6 @@ function createPost() {
 
 	state.bg.scrollFactor.set();
 	state.bg.screenCenter();
-	state.bg.scale.set(0.75, 0.75);
-	state.bg.alpha = 0.65;
 
 	add(menuI);
 
