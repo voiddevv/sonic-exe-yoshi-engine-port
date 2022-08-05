@@ -1,0 +1,147 @@
+{
+	"arrowColors": null,
+	"camOffset": {
+		"x": 0,
+		"y": 0
+	},
+	"globalOffset": {
+		"x": -110,
+		"y": 0
+	},
+	"healthbarColor": "#FED100",
+	"flipX": false,
+	"anims": [
+		{
+			"indices": null,
+			"x": 80,
+			"y": -89,
+			"anim": "Fleetway Right Alt",
+			"loop": false,
+			"name": "singRIGHT-alt",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": -39,
+			"y": -34,
+			"anim": "Fleetway Growl",
+			"loop": false,
+			"name": "Growl",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 4,
+			"y": -37,
+			"anim": "Fleetway Laugh",
+			"loop": false,
+			"name": "Laugh",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 64,
+			"y": 16,
+			"anim": "Fleetway StepItUp",
+			"loop": false,
+			"name": "StepItUp",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": -18,
+			"y": 107,
+			"anim": "Fleetway Grrr",
+			"loop": false,
+			"name": "Grrr",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 227,
+			"y": -28,
+			"anim": "Fleetway Laser Blast",
+			"loop": false,
+			"name": "Laser Blast",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 108,
+			"y": 27,
+			"anim": "Fleetway Show You",
+			"loop": false,
+			"name": "Show You",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 5,
+			"y": -11,
+			"anim": "Fleetway YoureFinished",
+			"loop": false,
+			"name": "YoureFinished",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 0,
+			"y": 0,
+			"anim": "Fleetway HowFast",
+			"loop": false,
+			"name": "HowFast",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": -39,
+			"y": -39,
+			"anim": "Fleetway Too Slow",
+			"loop": false,
+			"name": "Too Slow",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 20,
+			"y": -28,
+			"anim": "Fleetway WHAT?!",
+			"loop": false,
+			"name": "WHAT?!",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": -78,
+			"y": -94,
+			"anim": "Fleetway Scream",
+			"loop": false,
+			"name": "Scream",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 71,
+			"y": -27,
+			"anim": "Fleetway Shut Up",
+			"loop": false,
+			"name": "Shut Up",
+			"framerate": 24
+		}
+	],
+	"danceSteps": [
+		"idle"
+	],
+	"antialiasing": true,
+	"healthIconSteps": [
+		[
+			20,
+			0
+		],
+		[
+			0,
+			1
+		]
+	],
+	"scale": 1
+}
