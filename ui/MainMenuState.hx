@@ -105,6 +105,8 @@ var canTween:Bool = true;
 function update(elapsed) {
 	var controls = FlxControls.justPressed;
 
+	if (controls.ESCAPE || controls.BACKSPACE)
+		FlxG.switchState(new TitleState());
 	if (controls.UP && enableControls)
 		changeItem(-1);
 	if (controls.DOWN && enableControls)
