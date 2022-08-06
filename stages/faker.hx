@@ -1,5 +1,3 @@
-import flixel.FlxCamera;
-import flixel.FlxBasic;
 
 				
 				
@@ -53,13 +51,12 @@ function doStaticSign(lestatic:Int = 0, leopa:Bool = true)
 function create(){
 	
     gf.x += 200;
-	gf.y += 100;
 	dad.scrollFactor.set(1.25, 1);
     gf.scrollFactor.set(1.24, 1);
 	boyfriend.scrollFactor.set(1.25, 1);
 	boyfriend.x = 318.95 + 500;
-	boyfriend.y = 494.2 - 150;
-	dad.y += 14.3;
+	boyfriend.y = 500.2 - 150;
+	//dad.y += 104.3;
 	dad.x += 59.85;
     defaultCamZoom = .95;
 
@@ -163,13 +160,12 @@ function stepHit(curStep:Int){
 					fakertransform.animation.play('1');
 				case 824: // 824
 					fakertransform.setPosition(dad.x - 460, dad.getGraphicMidpoint().y - 700);
-					fakertransform.x += -19;
+					fakertransform.x +=  87;
 					fakertransform.y += 138;
 					fakertransform.animation.play('2');
 				case 836: // 836
 					fakertransform.setPosition(dad.getGraphicMidpoint().x - 460, dad.getGraphicMidpoint().y - 700);
 					fakertransform.x += 76;
-					fakertransform.y -= 110;
 					fakertransform.animation.play('3');
 				case 848: // 848
 					fakertransform.setPosition(dad.getGraphicMidpoint().x - 460, dad.getGraphicMidpoint().y - 700);
