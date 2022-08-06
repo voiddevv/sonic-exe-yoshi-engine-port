@@ -6,16 +6,8 @@ var bg:FlxSprite;
 var titleText:FlxSprite;
 
 state.remove(FlxG.state.titleText);
-
 FlxG.sound.play(Paths.sound('TitleLaugh'), 1);
-
-
-
-
 function create() {
-	
-	
-
 	bg = new FlxSprite(0, 0);
 	bg.frames = Paths.getSparrowAtlas('titlescreen/NewTitleMenuBG');
 	bg.antialiasing = true;
@@ -26,17 +18,12 @@ function create() {
 	add(bg);
 	bg.animation.play('red-lines');
 
-
-	
-	
-	
 	Logo = new FlxSprite(0, 0).loadGraphic(Paths.image('titlescreen/Logo'));
 	Logo.screenCenter();
 	Logo.scale.x = 0.5;
 	Logo.scale.y = 0.5;
 	add(Logo);
-	
-	
+
 	titleText = new FlxSprite(0, 0);
 	titleText.frames = Paths.getSparrowAtlas('titlescreen/titleEnterNEW');
 	titleText.animation.addByPrefix('idle', "Press Enter to Begin instance 1", 24);
@@ -46,9 +33,8 @@ function create() {
 	titleText.updateHitbox();
 	titleText.screenCenter();
 	add(titleText);
-
-
 }
+
 function createpost() {
 	FlxG.switchState(new ModState("titleState", mod));
 }
@@ -56,5 +42,4 @@ function createpost() {
 function update() {
 	if (FlxControls.justPressed.ENTER)
 		titleText.animation.play('press');
-
 }

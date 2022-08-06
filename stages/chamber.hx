@@ -1,25 +1,7 @@
-
-//
+// fuck you vscode
+var wall = new FlxSprite(-2379.05, -1211.1);
 function create() {
-    defaultCamZoom = .7;
-
-
-    var dad1:Character = new Character(0, 0, 'fleetway-extras');
-	dad1.alpha = 1;
-	add(dad1);
-	remove(dad1);
-
-	var dad2:Character = new Character(0, 0, 'fleetway-extras2');
-	dad2.alpha = 1;
-	add(dad2);
-	remove(dad2);
-
-	var dad3:Character = new Character(0, 0, 'fleetway-extras3');
-	dad3.alpha = 1;
-	add(dad3);
-	remove(dad3);
-
-   var wall = new FlxSprite(-2379.05, -1211.1);
+    defaultCamZoom = .3;
     wall.frames = Paths.getSparrowAtlas('stages/Chamber/Wall');
     wall.animation.addByPrefix('a', 'Wall instance 1');
     wall.animation.play('a');
@@ -27,16 +9,9 @@ function create() {
     wall.scrollFactor.set(1.1, 1.1);
     add(wall);
     
-    var floor = new FlxSprite(-2349, 921.25);
-    floor.antialiasing = true;
-    add(floor);
-    floor.frames = Paths.getSparrowAtlas('stages/Chamber/Floor');
-    floor.animation.addByPrefix('a', 'floor blue');
-    floor.animation.addByPrefix('b', 'floor yellow');
-    floor.animation.play('b', true);
-    floor.animation.play('a', true); // whenever song starts make sure this is playing
-    floor.scrollFactor.set(1.1, 1);
-    floor.antialiasing = true;
+    trace(dad.x);
+    trace(dad.y);
+
     
     var fleetwaybgshit = new FlxSprite(-2629.05, -1344.05);
     add(fleetwaybgshit);
@@ -87,8 +62,7 @@ function create() {
     pebles.animation.addByPrefix('a', 'pebles instance 1');
     pebles.animation.addByPrefix('b', 'pebles instance 2');
     pebles.animation.play('b', true);
-    pebles.animation.play('a',
-        true); // during cutscene this is gonna play first and then whenever the yellow beam appears, make it play "a"
+    pebles.animation.play('a',true); // during cutscene this is gonna play first and then whenever the yellow beam appears, make it play "a"
     pebles.scrollFactor.set(1.1, 1);
     pebles.antialiasing = true;
     
@@ -101,13 +75,15 @@ function create() {
     gf.visible = false;
 }
 
-function onCountDown() {
+/*function onCountDown() {
     
-}
-
+}*/
 function stepHit(curStep:Int) {
     switch curStep{
-        case 20:
-            dad.playAnim('fastanim', true);  
+        case 9:
+            floor.animation.play('a');
+            
+
     }
+    
 }

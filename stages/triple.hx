@@ -205,8 +205,8 @@ function stepHit(curStep:Int) {
 			//xeo.destroy();
 			xeo.visible = false;
 			dad.visible = false;			
-			dad.x = 1100 + 100 - 206;
-			dad.y = 520 + 44;
+			dad.x = 1000 + 100 - 206;
+			dad.y = 464;
 			kun = new Character(1300 + 100 - 206, 260 + 44, mod + ':kun');
     		dads.push(kun);
     		PlayState.add(kun);
@@ -259,7 +259,7 @@ function stepHit(curStep:Int) {
     				PlayState.add(PlayState.boyfriend);
 					remove(kun);
 					dad.x = -100;
-					dad.y = 275;
+					dad.y = -25;
 					PlayState.add(eggman);
 					dads.push(eggman);
     				PlayState.iconP2.changeCharacter(mod + ':eggman');

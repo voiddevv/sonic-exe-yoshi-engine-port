@@ -99,7 +99,7 @@
 			"anim": "Fleetway Too Slow",
 			"loop": false,
 			"name": "Too Slow",
-			"framerate": 24
+			"framerate": 30
 		},
 		{
 			"indices": null,
@@ -130,7 +130,7 @@
 		}
 	],
 	"danceSteps": [
-		"idle"
+		"singRIGHT-alt"
 	],
 	"antialiasing": true,
 	"healthIconSteps": [

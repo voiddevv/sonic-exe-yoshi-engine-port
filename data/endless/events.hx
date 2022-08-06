@@ -19,7 +19,7 @@ function beatHit(curBeat) { // fixing the offset cam zoom thing
 	}
 }
 
-var spinTime = (Conductor.stepCrochet / 1000) * 3;
+var spinTime = (Conductor.stepCrochet / 1000) * 2.25;
 var twnParam = {ease: FlxEase.circOut};
 
 function stepHit(curStep) {
@@ -29,7 +29,7 @@ function stepHit(curStep) {
 				FlxTween.angle(tospin, 0, 360, spinTime, twnParam);
 			});
 
-			FlxTween.angle(iconP1, 0, 360, spinTime, twnParam);
+			FlxTween.angle(iconP1, 0, -360, spinTime, twnParam);
 			FlxTween.angle(iconP2, 0, 360, spinTime, twnParam);
 
 			camHUD.zoom += 0.035;
