@@ -1,8 +1,8 @@
 {
 	"arrowColors": null,
 	"camOffset": {
-		"x": -110,
-		"y": 60
+		"x": 0,
+		"y": 180
 	},
 	"globalOffset": {
 		"x": 0,
@@ -13,8 +13,8 @@
 	"anims": [
 		{
 			"indices": null,
-			"x": 101,
-			"y": -90,
+			"x": 47,
+			"y": -36,
 			"anim": "X_Idle instance 1",
 			"loop": false,
 			"name": "idle",
@@ -22,17 +22,8 @@
 		},
 		{
 			"indices": null,
-			"x": 178,
-			"y": -109,
-			"anim": "X_Down instance 1",
-			"loop": false,
-			"name": "singDOWN",
-			"framerate": 24
-		},
-		{
-			"indices": null,
-			"x": 73,
-			"y": -52,
+			"x": -19,
+			"y": 5,
 			"anim": "X_Right instance 1",
 			"loop": false,
 			"name": "singRIGHT",
@@ -40,20 +31,29 @@
 		},
 		{
 			"indices": null,
-			"x": 117,
-			"y": -73,
-			"anim": "X_Left instance 1",
+			"x": 140,
+			"y": -58,
+			"anim": "X_Down instance 1",
 			"loop": false,
-			"name": "singLEFT",
+			"name": "singDOWN",
 			"framerate": 24
 		},
 		{
 			"indices": null,
-			"x": 135,
-			"y": 5,
+			"x": 62,
+			"y": 87,
 			"anim": "X_Up instance 1",
 			"loop": false,
 			"name": "singUP",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 57,
+			"y": -13,
+			"anim": "X_Left instance 1",
+			"loop": false,
+			"name": "singLEFT",
 			"framerate": 24
 		}
 	],
@@ -71,5 +71,5 @@
 			1
 		]
 	],
-	"scale": 1
+	"scale": 1.2
 }
