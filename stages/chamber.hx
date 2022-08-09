@@ -78,8 +78,8 @@ function create() {
 	emeralds.scrollFactor.set(1.1, 1);
 	emeralds.antialiasing = true;
 	add(emeralds);
-	
-    add(thechamber);
+
+	add(thechamber);
 	thechamber.frames = Paths.getSparrowAtlas('stages/Chamber/The Chamber');
 	thechamber.animation.addByPrefix('a', 'Chamber Sonic Fall', 24, false);
 	thechamber.scrollFactor.set(1.1, 1);

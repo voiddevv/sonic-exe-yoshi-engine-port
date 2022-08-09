@@ -144,11 +144,12 @@ function create() {
 	funfloor.active = false;
 	add(funfloor);
 }
+
 function beatHit(curBeat:Int) {
 	funpillarts1ANIM.animation.play('bumpypillar');
 	funpillarts2ANIM.animation.play('bumpypillar');
-
 }
+
 function stepHit(curStep:Int) {
 	switch curStep {
 		case 888:
