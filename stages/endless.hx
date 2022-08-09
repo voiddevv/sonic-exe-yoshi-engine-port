@@ -1,3 +1,4 @@
+//
 var blackFuck:FlxSprite;
 var startCircle:FlxSprite;
 var startText:FlxSprite;
@@ -151,7 +152,7 @@ function beatHit(curBeat:Int) {
 function stepHit(curStep:Int) {
 	switch curStep {
 		case 888:
-	        FlxTween.tween(FlxG.camera, {zoom: FlxG.camera.zoom + 0.3}, (Conductor.stepCrochet / 1000) * 2.9, {ease: FlxEase.cubeInOut});
+			FlxTween.tween(FlxG.camera, {zoom: FlxG.camera.zoom + 0.3}, (Conductor.stepCrochet / 1000) * 2.9, {ease: FlxEase.cubeInOut});
 			three();
 		case 891:
 			FlxTween.tween(FlxG.camera, {zoom: FlxG.camera.zoom + 0.3}, (Conductor.stepCrochet / 1000) * 5.95, {ease: FlxEase.cubeInOut});

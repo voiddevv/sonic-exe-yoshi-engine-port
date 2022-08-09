@@ -1,4 +1,4 @@
-var xeo:Character = new Character(-180, 5, mod + ':xeo');
+/*var xeo:Character = new Character(-180, 5, mod + ':xeo');
 var xeoflip:Character;
 var bf2flip:Character;
 var bf2:Chrarcter;
@@ -49,7 +49,7 @@ function doP3Static() {
 	}
 }
 
-/*function doP3JumpTAILS() {
+function doP3JumpTAILS() {
 	trace('SIMPLE JUMPSCARE');
 	var doP3JumpTAILS:FlxSprite = new FlxSprite().loadGraphic(Paths.image('coolshit/Tails'));
 

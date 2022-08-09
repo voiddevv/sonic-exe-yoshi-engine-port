@@ -1,1 +1,225 @@
-{"followLerp":0.06,"defaultCamZoom":0.9,"gfOffset":[0,0],"dadOffset":[0,0],"sprites":[{"pos":[-414,-441],"src":"stages/sonicstageexe/sky","shader":null,"beatTween":{"x":0,"ease":"linear","y":0},"alpha":1,"scrollFactor":[1,1],"antialiasing":true,"name":"sSKY","animation":null,"type":"Bitmap","scale":1.4},{"pos":[-290,-298],"src":"stages/sonicstageexe/backtrees","shader":null,"beatTween":{"x":0,"ease":"linear","y":0},"alpha":1,"scrollFactor":[1.1,1],"antialiasing":true,"name":"trees","animation":null,"type":"Bitmap","scale":1.2},{"pos":[-306,-335],"src":"stages/sonicstageexe/trees","shader":null,"beatTween":{"x":0,"ease":"linear","y":0},"alpha":1,"scrollFactor":[1.2,1.2],"antialiasing":true,"name":"bg2","animation":null,"type":"Bitmap","scale":1},{"pos":[-310,-240],"src":"stages/sonicstageexe/ground","shader":null,"beatTween":{"x":0,"ease":"linear","y":0},"alpha":1,"scrollFactor":[1.3,1],"antialiasing":true,"name":"bg","animation":null,"type":"Bitmap","scale":1.2},{"pos":[-160.999999999998,2043],"src":"stages/sonicstageexe/GreenHill","shader":null,"beatTween":{"x":0,"ease":"linear","y":0},"alpha":0.5,"scrollFactor":[1,1],"antialiasing":false,"name":"green","animation":null,"type":"Bitmap","scale":8},{"pos":[517.5,2580],"src":"stages/sonicstageexe/gf2","shader":null,"beatTween":{"x":0,"ease":"linear","y":0},"alpha":1,"scrollFactor":[1,1],"antialiasing":false,"name":"gf2","animation":{"type":"OnBeatForce","fps":12,"name":"Pixel gf dance"},"type":"SparrowAtlas","scale":7},{"pos":[400,130],"src":"","shader":null,"beatTween":null,"alpha":1,"scrollFactor":[0.95,0.95],"antialiasing":true,"name":"Girlfriend","animation":null,"type":"GF","scale":1},{"pos":[100,100],"src":"","shader":"","beatTween":{"x":0,"y":0,"ease":"linear"},"alpha":1,"scrollFactor":[1,1],"antialiasing":true,"name":"Dad","animation":null,"type":"Dad","scale":1},{"pos":[770,450],"src":"","shader":"","beatTween":{"x":0,"y":0,"ease":"linear"},"alpha":1,"scrollFactor":[1,1],"antialiasing":true,"name":"Boyfriend","animation":null,"type":"BF","scale":1}],"bfOffset":[0,0]}
+{
+	"followLerp": 0.06,
+	"defaultCamZoom": 0.9,
+	"gfOffset": [
+		0,
+		0
+	],
+	"dadOffset": [
+		0,
+		0
+	],
+	"sprites": [
+		{
+			"pos": [
+				-414,
+				-441
+			],
+			"src": "stages/sonicstageexe/sky",
+			"shader": null,
+			"beatTween": {
+				"x": 0,
+				"ease": "linear",
+				"y": 0
+			},
+			"alpha": 1,
+			"scrollFactor": [
+				1,
+				1
+			],
+			"antialiasing": true,
+			"name": "sSKY",
+			"animation": null,
+			"type": "Bitmap",
+			"scale": 1.4
+		},
+		{
+			"pos": [
+				-290,
+				-298
+			],
+			"src": "stages/sonicstageexe/backtrees",
+			"shader": null,
+			"beatTween": {
+				"x": 0,
+				"ease": "linear",
+				"y": 0
+			},
+			"alpha": 1,
+			"scrollFactor": [
+				1.1,
+				1
+			],
+			"antialiasing": true,
+			"name": "trees",
+			"animation": null,
+			"type": "Bitmap",
+			"scale": 1.2
+		},
+		{
+			"pos": [
+				-306,
+				-335
+			],
+			"src": "stages/sonicstageexe/trees",
+			"shader": null,
+			"beatTween": {
+				"x": 0,
+				"ease": "linear",
+				"y": 0
+			},
+			"alpha": 1,
+			"scrollFactor": [
+				1.2,
+				1.2
+			],
+			"antialiasing": true,
+			"name": "bg2",
+			"animation": null,
+			"type": "Bitmap",
+			"scale": 1
+		},
+		{
+			"pos": [
+				-310,
+				-240
+			],
+			"src": "stages/sonicstageexe/ground",
+			"shader": null,
+			"beatTween": {
+				"x": 0,
+				"ease": "linear",
+				"y": 0
+			},
+			"alpha": 1,
+			"scrollFactor": [
+				1.3,
+				1
+			],
+			"antialiasing": true,
+			"name": "bg",
+			"animation": null,
+			"type": "Bitmap",
+			"scale": 1.2
+		},
+		{
+			"pos": [
+				-160.999999999998,
+				2043
+			],
+			"src": "stages/sonicstageexe/GreenHill",
+			"shader": null,
+			"beatTween": {
+				"x": 0,
+				"ease": "linear",
+				"y": 0
+			},
+			"alpha": 0.5,
+			"scrollFactor": [
+				1,
+				1
+			],
+			"antialiasing": false,
+			"name": "green",
+			"animation": null,
+			"type": "Bitmap",
+			"scale": 8
+		},
+		{
+			"pos": [
+				517.5,
+				2580
+			],
+			"src": "stages/sonicstageexe/gf2",
+			"shader": null,
+			"beatTween": {
+				"x": 0,
+				"ease": "linear",
+				"y": 0
+			},
+			"alpha": 1,
+			"scrollFactor": [
+				1,
+				1
+			],
+			"antialiasing": false,
+			"name": "gf2",
+			"animation": {
+				"type": "OnBeatForce",
+				"fps": 12,
+				"name": "Pixel gf dance"
+			},
+			"type": "SparrowAtlas",
+			"scale": 7
+		},
+		{
+			"pos": [
+				400,
+				130
+			],
+			"src": "",
+			"shader": null,
+			"beatTween": null,
+			"alpha": 1,
+			"scrollFactor": [
+				0.95,
+				0.95
+			],
+			"antialiasing": true,
+			"name": "Girlfriend",
+			"animation": null,
+			"type": "GF",
+			"scale": 1
+		},
+		{
+			"pos": [
+				100,
+				100
+			],
+			"src": "",
+			"shader": "",
+			"beatTween": {
+				"x": 0,
+				"y": 0,
+				"ease": "linear"
+			},
+			"alpha": 1,
+			"scrollFactor": [
+				1,
+				1
+			],
+			"antialiasing": true,
+			"name": "Dad",
+			"animation": null,
+			"type": "Dad",
+			"scale": 1
+		},
+		{
+			"pos": [
+				770,
+				450
+			],
+			"src": "",
+			"shader": "",
+			"beatTween": {
+				"x": 0,
+				"y": 0,
+				"ease": "linear"
+			},
+			"alpha": 1,
+			"scrollFactor": [
+				1,
+				1
+			],
+			"antialiasing": true,
+			"name": "Boyfriend",
+			"animation": null,
+			"type": "BF",
+			"scale": 1
+		}
+	],
+	"bfOffset": [
+		0,
+		0
+	]
+}
