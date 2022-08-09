@@ -17,6 +17,4 @@ function create() {
 	character.camOffset.y = - 50 ;
 	updateHitbox();
 
-	//camFollow.y = dad.getMidpoint().y - 50;
-	//camFollow.x = dad.getMidpoint().x + 100;
 }

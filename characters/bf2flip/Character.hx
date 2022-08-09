@@ -23,8 +23,5 @@ function create() {
 	playAnim('idle');
 	character.flipX = true;
 	character.camOffset.x = 300;
-	character.camOffset.y = - 250;
-
-
-
+	character.camOffset.y = -250;
 }
