@@ -16,10 +16,6 @@ var _yCenter = (_down + _up) / 2;
 function onGenerateStaticArrows() {
 	cpuStrums.forEach(function(e:FlxSprite) {
 		e.visible = false;
-		e.alpha = 0.025;
-		e.scrollSpeed = -0.2;
-		// e.notes_angle = 180;
-		e.x = _right[e.ID];
 	});
 }
 

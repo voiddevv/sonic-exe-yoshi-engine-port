@@ -2,6 +2,7 @@ var blackFuck:FlxSprite;
 var startCircle:FlxSprite;
 var startText:FlxSprite;
 var spinArray:Array<Int>;
+var funpillarts1ANIM:FlxSprite = new FlxSprite(-169, -167);
 
 spinArray = [
 	272, 276, 336, 340, 400, 404, 464, 468, 528, 532, 592, 596, 656, 660, 720, 724, 784, 788, 848, 852, 912, 916, 976, 980, 1040, 1044, 1104, 1108, 1424,
@@ -121,7 +122,6 @@ function create() {
 	funpillarts2ANIM.antialiasing = true;
 	funpillarts2ANIM.scrollFactor.set(0.6, 0.6);
 	add(funpillarts2ANIM);
-	funpillarts2ANIM.animation.play('bumpypillar');
 
 	var funbush2:FlxSprite = new FlxSprite(132, 354).loadGraphic(Paths.image('stages/endless/Bush 1'));
 	funbush2.antialiasing = true;
@@ -129,7 +129,6 @@ function create() {
 	funbush2.active = false;
 	add(funbush2);
 
-	var funpillarts1ANIM:FlxSprite = new FlxSprite(-169, -167);
 	funpillarts1ANIM.frames = Paths.getSparrowAtlas('stages/endless/Majin Boppers Front');
 	funpillarts1ANIM.animation.addByPrefix('bumpypillar', 'MajinBop1 instance 1', 24);
 	// funpillarts1ANIM.setGraphicSize(Std.int(funpillarts1ANIM.width * 0.7));
@@ -137,7 +136,6 @@ function create() {
 	funpillarts1ANIM.scrollFactor.set(0.6, 0.6);
 	funpillarts1ANIM.cameras = camHUD;
 	add(funpillarts1ANIM);
-	funpillarts1ANIM.animation.play('bumpypillar');
 
 	var funfloor:FlxSprite = new FlxSprite(-340, 660).loadGraphic(Paths.image('stages/endless/floor BG'));
 	funfloor.antialiasing = true;
@@ -145,21 +143,25 @@ function create() {
 	funfloor.active = false;
 	add(funfloor);
 }
+function beatHit(curBeat:Int) {
+	funpillarts1ANIM.animation.play('bumpypillar');
+	funpillarts2ANIM.animation.play('bumpypillar');
 
+}
 function stepHit(curStep:Int) {
 	switch curStep {
 		case 888:
 	        FlxTween.tween(FlxG.camera, {zoom: FlxG.camera.zoom + 0.3}, (Conductor.stepCrochet / 1000) * 2.9, {ease: FlxEase.cubeInOut});
 			three();
 		case 891:
-			FlxTween.tween(FlxG.camera, {zoom: FlxG.camera.zoom + 0.3}, (Conductor.stepCrochet / 1000) * 5.9, {ease: FlxEase.cubeInOut});
+			FlxTween.tween(FlxG.camera, {zoom: FlxG.camera.zoom + 0.3}, (Conductor.stepCrochet / 1000) * 5.95, {ease: FlxEase.cubeInOut});
 			two();
 		case 896:
-			FlxTween.tween(FlxG.camera, {zoom: FlxG.camera.zoom + 0.3}, (Conductor.stepCrochet / 1000) * 2.9, {ease: FlxEase.cubeInOut});
+			FlxTween.tween(FlxG.camera, {zoom: FlxG.camera.zoom + 0.3}, (Conductor.stepCrochet / 1000) * 2.95, {ease: FlxEase.cubeInOut});
 			one();
 		case 899:
 			camLocked = true;
-			FlxTween.tween(FlxG.camera, {zoom: defaultCamZoom}, (Conductor.stepCrochet / 1000) * 5.45, {ease: FlxEase.cubeInOut});
+			FlxTween.tween(FlxG.camera, {zoom: defaultCamZoom}, (Conductor.stepCrochet / 1000) * 3.30, {ease: FlxEase.cubeInOut});
 			gofun();
 	}
 }

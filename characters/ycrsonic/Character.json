@@ -1,8 +1,8 @@
 {
 	"arrowColors": null,
 	"camOffset": {
-		"x": -70,
-		"y": -80
+		"x": -190,
+		"y": 90
 	},
 	"globalOffset": {
 		"x": 0,
@@ -13,8 +13,8 @@
 	"anims": [
 		{
 			"indices": null,
-			"x": 109.037037037037,
-			"y": 16.5925925925926,
+			"x": 109,
+			"y": 17,
 			"anim": "NewPhase2Sonic Idle instance 1",
 			"loop": false,
 			"name": "idle",
@@ -45,7 +45,7 @@
 			"anim": "NewPhase2Sonic Laugh instance 1",
 			"loop": false,
 			"name": "laugh",
-			"framerate": 40
+			"framerate": 24
 		},
 		{
 			"indices": null,
@@ -54,7 +54,7 @@
 			"anim": "NewPhase2Sonic Up instance 1",
 			"loop": false,
 			"name": "singUP",
-			"framerate": 24
+			"framerate": 30
 		},
 		{
 			"indices": null,
