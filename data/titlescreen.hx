@@ -35,10 +35,6 @@ function create() {
 	add(titleText);
 }
 
-function createpost() {
-	FlxG.switchState(new ModState("titleState", mod));
-}
-
 function update() {
 	if (FlxControls.justPressed.ENTER)
 		titleText.animation.play('press');
