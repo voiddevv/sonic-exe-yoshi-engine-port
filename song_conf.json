@@ -97,13 +97,13 @@
 			"name": "milk"
 		},
 		{
-			"end_cutscene": null,
-			"cutscene": null,
-			"difficulties": null,
 			"scripts": [
 				"scripts/nocountdown",
 				"stages/chamber"
 			],
+			"difficulties": null,
+			"end_cutscene": null,
+			"cutscene": null,
 			"name": "chaos"
 		}
 	]

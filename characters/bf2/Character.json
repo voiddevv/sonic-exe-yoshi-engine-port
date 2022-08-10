@@ -10,7 +10,89 @@
 	},
 	"healthbarColor": "#31B0D1",
 	"flipX": false,
-	"anims": [],
+	"anims": [
+		{
+			"indices": null,
+			"x": -70,
+			"y": 85,
+			"anim": "Left_Miss",
+			"loop": false,
+			"name": "singRIGHTmiss",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": -34,
+			"y": -10,
+			"anim": "Sing_Down",
+			"loop": false,
+			"name": "singDOWN",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 10,
+			"y": 92,
+			"anim": "Miss_Right",
+			"loop": false,
+			"name": "singLEFTmiss",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 24,
+			"y": 54,
+			"anim": "Sing_Up",
+			"loop": false,
+			"name": "singUP",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 5,
+			"y": 4,
+			"anim": "Idle",
+			"loop": false,
+			"name": "idle",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": -31,
+			"y": 6,
+			"anim": "Down_Miss",
+			"loop": false,
+			"name": "singDOWNmiss",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": -65,
+			"y": -7,
+			"anim": "Sing_Left",
+			"loop": false,
+			"name": "singRIGHT",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 35,
+			"y": 20,
+			"anim": "Sing_Right",
+			"loop": false,
+			"name": "singLEFT",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 20,
+			"y": 135,
+			"anim": "Up_Miss",
+			"loop": false,
+			"name": "singUPmiss",
+			"framerate": 24
+		}
+	],
 	"danceSteps": [
 		"idle"
 	],

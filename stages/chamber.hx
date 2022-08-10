@@ -95,9 +95,11 @@ function create() {
 	pebles.scrollFactor.set(1.1, 1);
 	pebles.antialiasing = true;
 
-	add(porker);
-
 	gf.visible = false;
+}
+
+function createInFront() {
+	add(porker);
 }
 
 function stepHit(curStep:Int) {
