@@ -1,8 +1,8 @@
 {
 	"arrowColors": null,
 	"camOffset": {
-		"x": -430,
-		"y": 110
+		"x": 300,
+		"y": -250
 	},
 	"globalOffset": {
 		"x": 0,
@@ -13,17 +13,8 @@
 	"anims": [
 		{
 			"indices": null,
-			"x": 63.2098765432097,
-			"y": -186.469135802469,
-			"anim": "Miss_Right",
-			"loop": false,
-			"name": "singRIGHTmiss",
-			"framerate": 24
-		},
-		{
-			"indices": null,
-			"x": 48.9876543209878,
-			"y": -290.765432098765,
+			"x": 3,
+			"y": -26,
 			"anim": "Sing_Down",
 			"loop": false,
 			"name": "singDOWN",
@@ -31,8 +22,17 @@
 		},
 		{
 			"indices": null,
-			"x": 19.7530864197532,
-			"y": -221.234567901235,
+			"x": 54,
+			"y": 76,
+			"anim": "Miss_Right",
+			"loop": false,
+			"name": "singLEFTmiss",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 65,
+			"y": 41,
 			"anim": "Sing_Up",
 			"loop": false,
 			"name": "singUP",
@@ -40,17 +40,17 @@
 		},
 		{
 			"indices": null,
-			"x": 96.3950617283947,
-			"y": -198.320987654321,
+			"x": -32,
+			"y": 68,
 			"anim": "Left_Miss",
 			"loop": false,
-			"name": "singLEFTmiss",
+			"name": "singRIGHTmiss",
 			"framerate": 24
 		},
 		{
 			"indices": null,
-			"x": 101.938271604938,
-			"y": -275.41975308642,
+			"x": 46,
+			"y": -12,
 			"anim": "Idle",
 			"loop": false,
 			"name": "idle",
@@ -58,8 +58,8 @@
 		},
 		{
 			"indices": null,
-			"x": 56.9753086419753,
-			"y": -276.901234567901,
+			"x": 7,
+			"y": -8,
 			"anim": "Down_Miss",
 			"loop": false,
 			"name": "singDOWNmiss",
@@ -67,29 +67,29 @@
 		},
 		{
 			"indices": null,
-			"x": 67.1604938271602,
-			"y": -264.691358024691,
+			"x": 77,
+			"y": 2,
 			"anim": "Sing_Right",
-			"loop": false,
-			"name": "singRIGHT",
-			"framerate": 24
-		},
-		{
-			"indices": null,
-			"x": 105.876543209877,
-			"y": -289.975308641976,
-			"anim": "Sing_Left",
 			"loop": false,
 			"name": "singLEFT",
 			"framerate": 24
 		},
 		{
 			"indices": null,
-			"x": 18.1728395061727,
-			"y": -143.012345679012,
+			"x": 62,
+			"y": 124,
 			"anim": "Up_Miss",
 			"loop": false,
 			"name": "singUPmiss",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": -32,
+			"y": -23,
+			"anim": "Sing_Left",
+			"loop": false,
+			"name": "singRIGHT",
 			"framerate": 24
 		}
 	],

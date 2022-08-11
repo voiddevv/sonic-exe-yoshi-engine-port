@@ -33,7 +33,7 @@ function onMiss() {
 
 function onPlayerHit() {
 	FlxG.sound.play(Paths.sound('ring'), 1);
-	health += 0;
+	// health += 0; // lmao
 	rings += 1;
 	trace(rings);
 }

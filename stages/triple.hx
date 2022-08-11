@@ -123,11 +123,11 @@ function doP3Static() {
 }
 
 var xeo:Character = new Character(-900, 950, mod + ':xeo');
-var xeoflip:Character = new Character(750 - 250, -94.75 + 100, mod + ':xeoflip');
+var xeoflip:Character = new Character(500, 5.25, mod + ':xeoflip');
 var bf2flip:Character = new Boyfriend(702.45 - 350, 370.45, mod + ':bf2flip');
-var bf2:Chrarcter = new Boyfriend(502.45 + 200, 370.45, mod + ':bf2');
-var kun:Character = new Character(1300 + 100 - 206, 260 + 44, mod + ':kun');
-var eggman:Character = new Character(20 - 200, 30 + 200, mod + ':eggman');
+var bf2:Chrarcter = new Boyfriend(702.45, 370.45, mod + ':bf2');
+var kun:Character = new Character(1194, 304, mod + ':kun');
+var eggman:Character = new Character(-180, 230, mod + ':eggman');
 
 function createPost() {
 	cpuStrums.members[2].visible = false;
