@@ -5,7 +5,7 @@ var spikeDown:FlxSprite = new FlxSprite(-60, 630);
 var arrows:FlxSprite = new FlxSprite(92, 182);
 
 // funny
-var curSelected:Int = 0;
+var curSelecte:Int = 0;
 var menuI:FlxTypedGroup<FlxSprite>;
 var selectedSomethin:Bool = false;
 var enableControls:Bool = false;
@@ -111,6 +111,8 @@ function update(elapsed) {
 		changeItem(-1);
 	if (controls.DOWN && enableControls)
 		changeItem(1);
+	
+		
 	if (controls.ENTER && enableControls) {
 		switch (menuI.members[curSelected].ID) {
 			case 0: // story mode
