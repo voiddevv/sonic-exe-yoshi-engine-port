@@ -1,72 +1,72 @@
 {
 	"arrowColors": [
-		"#C24B99",
-		"#00FFFF",
-		"#12FA05",
-		"#F9393F"
+		"#C78E1A",
+		"#D9172B",
+		"#8F040B",
+		"#BDB932"
 	],
 	"camOffset": {
-		"x": -90,
-		"y": 50
+		"x": 100,
+		"y": -50
 	},
 	"globalOffset": {
 		"x": 0,
 		"y": 0
 	},
-	"healthbarColor": "#483000",
+	"healthbarColor": "#815600",
 	"flipX": false,
 	"anims": [
 		{
 			"indices": null,
-			"x": 46,
-			"y": -180,
+			"x": -5,
+			"y": 5,
 			"anim": "Eggman_Idle",
-			"loop": false,
+			"loop": true,
 			"name": "idle",
 			"framerate": 24
 		},
 		{
 			"indices": null,
-			"x": 53.7037037037037,
-			"y": 20.2962962962963,
+			"x": -10,
+			"y": 210,
 			"anim": "Eggman_Laugh",
 			"loop": false,
 			"name": "laugh",
-			"framerate": 24
+			"framerate": 35
 		},
 		{
 			"indices": null,
-			"x": 46,
-			"y": -7.5555555555556,
-			"anim": "Eggman_Right",
-			"loop": false,
-			"name": "singRIGHT",
-			"framerate": 24
-		},
-		{
-			"indices": null,
-			"x": 74.6666666666667,
-			"y": -268.444444444444,
+			"x": 49,
+			"y": -95,
 			"anim": "Eggman_Down",
-			"loop": false,
+			"loop": true,
 			"name": "singDOWN",
 			"framerate": 24
 		},
 		{
 			"indices": null,
-			"x": 213.333333333333,
-			"y": -81.7777777777778,
+			"x": 40,
+			"y": 174,
+			"anim": "Eggman_Right",
+			"loop": true,
+			"name": "singRIGHT",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 237,
+			"y": 97,
 			"anim": "Eggman_Left",
-			"loop": false,
+			"loop": true,
 			"name": "singLEFT",
 			"framerate": 24
 		},
 		{
 			"indices": null,
-			"x": 165.777777777778,
-			"y": 60,
+			"x": 110,
+			"y": 231,
 			"anim": "Eggman_Up",
-			"loop": false,
+			"loop": true,
 			"name": "singUP",
 			"framerate": 24
 		}
