@@ -3,7 +3,6 @@ import openfl.filters.ShaderFilter;
 
 var dad2:Character;
 var shitToHide:Array<Dynamic>;
-var shader:CustomShader;
 
 // note pos for l/r/center
 var _center = [416, 528, 640, 752];
@@ -16,11 +15,27 @@ var _down = 570;
 var _up = 50;
 var _yCenter = (_down + _up) / 2;
 
+// ty WeldedFlap for the shader code !!
+var shader:CustomShader;
+var time:Int;
+var res:Array<Int>;
+
 function create() {
 	defaultCamZoom = 0.9;
 	dad2 = new Character(-150, 330, mod + ':tailssunshinealt');
 	dad2.visible = false;
 	add(dad2);
+
+	shader = new CustomShader(mod + ":vcrDistortion");
+
+	PlayState.camHUD.setFilters([new ShaderFilter(shader)]);
+	PlayState.camHUD.filtersEnabled = true;
+
+	PlayState.camGame.setFilters([new ShaderFilter(shader)]);
+	PlayState.camGame.filtersEnabled = true;
+
+	res = [FlxG.width, FlxG.height];
+	time = 0;
 }
 
 function createPost() {
@@ -34,15 +49,12 @@ function createPost() {
 	];
 }
 
-function createInFront() {
-	shader = new CustomShader(mod + ':VCR');
-	PlayState.camGame.setFilters([new ShaderFilter(shader)]);
-	PlayState.camGame.filtersEnabled = true;
-}
-
 function update(elapsed) {
-	shader.setValue('iTime', Conductor.songPosition / 1000);
-	shader.setValue('iResolution', 2000);
+	time += elapsed;
+
+	shader.shaderData.iResolution.value = [res];
+	shader.shaderData.iTime.value = [time];
+	shader.shaderData.scanlinesOn.value = false;
 }
 
 var funnyDark:Bool = false;
