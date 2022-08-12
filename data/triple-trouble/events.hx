@@ -9,7 +9,7 @@ var p3JumpTAILS:FlxSprite = new FlxSprite().loadGraphic(Paths.image('coolshit/Ta
 var daP3Static = new FlxSprite(0, 0);
 var p3staticbg = new FlxSprite(0, 0);
 
-bgvischangeArray = [1, 1024, 1088, 1216, 1280, 2305, 2810, 3199, 4096];
+// it no workey bgvischangeArray = [1, 1024, 1088, 1216, 1280, 2305, 2810, 3199, 4096];
 function create() {
 	add(xeo);
 	xeo.alpha = 0.0001;

@@ -5,7 +5,7 @@ var spikeDown:FlxSprite = new FlxSprite(-60, 630);
 var arrows:FlxSprite = new FlxSprite(92, 182);
 
 // funny
-var curSelecte:Int = 0;
+var current:Int = 0;
 var menuI:FlxTypedGroup<FlxSprite>;
 var selectedSomethin:Bool = false;
 var enableControls:Bool = false;
@@ -105,26 +105,26 @@ var canTween:Bool = true;
 function update(elapsed) {
 	var controls = FlxControls.justPressed;
 
-	if (controls.ESCAPE || controls.BACKSPACE)
-		FlxG.switchState(new TitleState());
-	if (controls.UP && enableControls)
-		changeItem(-1);
-	if (controls.DOWN && enableControls)
-		changeItem(1);
-	
-		
-	if (controls.ENTER && enableControls) {
-		switch (menuI.members[curSelected].ID) {
-			case 0: // story mode
-				FlxG.switchState(new StoryMenuState());
-			case 1: // freeplay
-				FlxG.switchState(new FreeplayState());
-			case 2: // options
-				FlxG.switchState(new options.screens.OptionMain());
-			case 3:
-				FlxG.switchState(new ModState("SoundTest", mod));
-			default:
-				trace('what the fuck how');
+	if (enableControls) {
+		if (controls.ESCAPE || controls.BACKSPACE)
+			FlxG.switchState(new TitleState());
+		if (controls.UP || controls.W)
+			changeItem(-1);
+		if (controls.DOWN || controls.S)
+			changeItem(1);
+		if (controls.ENTER) {
+			switch (menuI.members[current].ID) {
+				case 0: // story mode
+					FlxG.switchState(new StoryMenuState());
+				case 1: // freeplay
+					FlxG.switchState(new FreeplayState());
+				case 2: // options
+					FlxG.switchState(new options.screens.OptionMain());
+				case 3:
+					FlxG.switchState(new ModState("SoundTest", mod));
+				default:
+					trace('what the fuck how');
+			}
 		}
 	}
 
@@ -145,18 +145,18 @@ function update(elapsed) {
 }
 
 function changeItem(huh:Int = 0) {
-	curSelected += huh;
+	current += huh;
 
-	if (curSelected >= menuI.length)
-		curSelected = 0;
-	if (curSelected < 0)
-		curSelected = menuI.length - 1;
+	if (current >= menuI.length)
+		current = 0;
+	if (current < 0)
+		current = menuI.length - 1;
 
 	menuI.forEach(function(spr:FlxSprite) {
 		spr.animation.play('idle');
 		spr.offset.set(0, 0);
 
-		if (spr.ID == curSelected) {
+		if (spr.ID == current) {
 			spr.animation.play('selected');
 		}
 
