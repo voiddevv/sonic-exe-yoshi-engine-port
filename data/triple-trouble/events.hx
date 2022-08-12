@@ -1,16 +1,20 @@
+import flixel.util.FlxTimer;
+
 var xeo:Character = new Character(-180, 5, mod + ':xeo');
 var xeoflip:Character = new Character(750 - 250, -94.75 + 100, mod + ':xeoflip');
 var bf2flip:Character = new Boyfriend(702.45 - 350, 370.45, mod + ':bf2flip');
 var bf2:Chrarcter = new Boyfriend(502.45 + 200, 370.45, mod + ':bf2');
 var kun:Character = new Character(1300 + 100 - 206, 260 + 44, mod + ':kun');
 var eggman:Character = new Character(20 - 200, 30 + 200, mod + ':eggman');
-var p3JumpKNUCKLES:FlxSprite = new FlxSprite();
-var p3JumpTAILS:FlxSprite = new FlxSprite();
+var p3JumpKNUCKLES:FlxSprite = new FlxSprite().loadGraphic(Paths.image('coolshit/Knuckles'));
+var p3JumpTAILS:FlxSprite = new FlxSprite().loadGraphic(Paths.image('coolshit/Tails'));
 var daP3Static = new FlxSprite(0, 0);
 var p3staticbg = new FlxSprite(0, 0);
 
 bgvischangeArray = [1, 1024, 1088, 1216, 1280, 2305, 2810, 3199, 4096];
 function create() {
+	EngineSettings.customArrowSkin = "default";
+
 	add(xeo);
 	xeo.alpha = 0.0001;
 	add(xeoflip);
@@ -55,6 +59,7 @@ function doP3JumpTAILS() {
 
 	p3JumpTAILS.setGraphicSize(FlxG.width, FlxG.height);
 	p3JumpTAILS.screenCenter();
+	p3JumpTAILS.scrollFactor.set();
 	p3JumpTAILS.cameras = [camHUD];
 	add(p3JumpTAILS);
 
@@ -106,7 +111,7 @@ function stepHit(curStep:Int) {
 			PlayState.add(PlayState.boyfriend);
 			bf2.alpha = 1;
 		case 1296: // switch to knuckles facing left facing right and bf facing right, and cool static
-			
+
 			FlxTween.tween(FlxG.camera, {zoom: 1.1}, 2, {ease: FlxEase.cubeOut});
 			defaultCamZoom = 1.1;
 			p3staticbg.visible = false;
