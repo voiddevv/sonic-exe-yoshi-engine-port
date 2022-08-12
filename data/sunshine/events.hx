@@ -4,16 +4,9 @@ import openfl.filters.ShaderFilter;
 var dad2:Character;
 var shitToHide:Array<Dynamic>;
 
-// note pos for l/r/center
+// note stuff
 var _center = [416, 528, 640, 752];
-var _left = [96, 208, 320, 432];
 var _right = [736, 848, 960, 1072];
-var _xCenter = (_center[1] + _center[2]) / 2;
-
-// y pos for upscroll/downscroll
-var _down = 570;
-var _up = 50;
-var _yCenter = (_down + _up) / 2;
 
 // ty WeldedFlap for the shader code !!
 var shader:CustomShader;

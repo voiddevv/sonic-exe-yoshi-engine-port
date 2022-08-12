@@ -13,30 +13,17 @@
 	"anims": [
 		{
 			"indices": null,
-<<<<<<< HEAD
-			"x": 3,
-			"y": 82,
-			"anim": "Left_Miss",
-			"loop": false,
-			"name": "singLEFTmiss",
-=======
 			"x": -70,
 			"y": 85,
 			"anim": "Left_Miss",
 			"loop": false,
 			"name": "singRIGHTmiss",
->>>>>>> 943503566613b9dbe97551924a47253869637401
 			"framerate": 24
 		},
 		{
 			"indices": null,
-<<<<<<< HEAD
-			"x": -42,
-			"y": -11,
-=======
 			"x": -34,
 			"y": -10,
->>>>>>> 943503566613b9dbe97551924a47253869637401
 			"anim": "Sing_Down",
 			"loop": false,
 			"name": "singDOWN",
@@ -44,30 +31,17 @@
 		},
 		{
 			"indices": null,
-<<<<<<< HEAD
-			"x": -32,
-			"y": 90,
-			"anim": "Miss_Right",
-			"loop": false,
-			"name": "singRIGHTmiss",
-=======
 			"x": 10,
 			"y": 92,
 			"anim": "Miss_Right",
 			"loop": false,
 			"name": "singLEFTmiss",
->>>>>>> 943503566613b9dbe97551924a47253869637401
 			"framerate": 24
 		},
 		{
 			"indices": null,
-<<<<<<< HEAD
-			"x": -81,
-			"y": 57,
-=======
 			"x": 24,
 			"y": 54,
->>>>>>> 943503566613b9dbe97551924a47253869637401
 			"anim": "Sing_Up",
 			"loop": false,
 			"name": "singUP",
@@ -84,13 +58,8 @@
 		},
 		{
 			"indices": null,
-<<<<<<< HEAD
-			"x": -35,
-			"y": 5,
-=======
 			"x": -31,
 			"y": 6,
->>>>>>> 943503566613b9dbe97551924a47253869637401
 			"anim": "Down_Miss",
 			"loop": false,
 			"name": "singDOWNmiss",
@@ -98,47 +67,26 @@
 		},
 		{
 			"indices": null,
-<<<<<<< HEAD
-			"x": 12,
-			"y": -6,
-			"anim": "Sing_Left",
-			"loop": false,
-			"name": "singLEFT",
-=======
 			"x": -65,
 			"y": -7,
 			"anim": "Sing_Left",
 			"loop": false,
 			"name": "singRIGHT",
->>>>>>> 943503566613b9dbe97551924a47253869637401
 			"framerate": 24
 		},
 		{
 			"indices": null,
-<<<<<<< HEAD
-			"x": -33,
-			"y": 18,
-			"anim": "Sing_Right",
-			"loop": false,
-			"name": "singRIGHT",
-=======
 			"x": 35,
 			"y": 20,
 			"anim": "Sing_Right",
 			"loop": false,
 			"name": "singLEFT",
->>>>>>> 943503566613b9dbe97551924a47253869637401
 			"framerate": 24
 		},
 		{
 			"indices": null,
-<<<<<<< HEAD
-			"x": -81,
-			"y": 138,
-=======
 			"x": 20,
 			"y": 135,
->>>>>>> 943503566613b9dbe97551924a47253869637401
 			"anim": "Up_Miss",
 			"loop": false,
 			"name": "singUPmiss",
