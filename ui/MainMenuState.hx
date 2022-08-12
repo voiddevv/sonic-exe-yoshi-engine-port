@@ -1,5 +1,3 @@
-// vs code complain termination lmaoo
-
 var spikeUp:FlxSprite = new FlxSprite(0, -65);
 var spikeDown:FlxSprite = new FlxSprite(-60, 630);
 var arrows:FlxSprite = new FlxSprite(92, 182);
@@ -11,7 +9,16 @@ var selectedSomethin:Bool = false;
 var enableControls:Bool = false;
 
 function create() {
-	var everything = ["story mode", "freeplay", "mods", "donate", "toolbox", "credits", "options"];
+	var everything = [
+		"story mode",
+		"freeplay",
+		"mods",
+		"donate",
+		"toolbox",
+		"credits",
+		"options",
+		"medals"
+	];
 	for (i in everything)
 		state.optionShit.remove(i);
 
@@ -115,7 +122,7 @@ function update(elapsed) {
 		if (controls.ENTER) {
 			switch (menuI.members[current].ID) {
 				case 0: // story mode
-					FlxG.switchState(new StoryMenuState());
+					FlxG.switchState(new ModState("Story", mod));
 				case 1: // freeplay
 					FlxG.switchState(new FreeplayState());
 				case 2: // options

@@ -39,6 +39,7 @@ var funnymonke:Bool = true;
 function create() {
 	DiscordClient.changePresence('In the Sound Test Menu', null); // yes this works btw lmao
 	FlxG.sound.music.stop();
+	FlxG.sound.playMusic(Paths.music('breakfast'));
 
 	bg = new FlxSprite(0, 0);
 	bg.loadGraphic(Paths.image('sound test/background'));
@@ -85,7 +86,7 @@ function create() {
 		ease: FlxEase.linear,
 		startDelay: 5
 	});
-	
+
 	add(pcmNum);
 	add(daNum);
 }
@@ -171,7 +172,6 @@ function doFunny(pcm:Int, da:Int) {
 	var _songName;
 	var _songDiff;
 	for (i in 0...values.length) {
-		// setting up actual values instead of using array nums, cuz its easier
 		_pcm = values[i][0];
 		_da = values[i][1];
 		_isSong = values[i][2];
@@ -206,6 +206,12 @@ function doFunny(pcm:Int, da:Int) {
 						}');
 					loadAndPlayStoryWeek(weekData);
 				}
+
+				if (_pcm == 41 && _da == 1)
+					FlxG.switchState(new ModState("Cameo", mod, ["Razencro"]));
+
+				if (_pcm == 1 && _da == 13)
+					FlxG.switchState(new ModState("Cameo", mod, ["Divide"]));
 			}
 		}
 	}
