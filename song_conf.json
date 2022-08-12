@@ -32,8 +32,7 @@
 		{
 			"scripts": [
 				"stages/triple",
-				"scripts/nocountdown",
-				"scripts/debugShit"
+				"scripts/nocountdown"
 			],
 			"difficulties": null,
 			"end_cutscene": null,

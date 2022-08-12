@@ -1,3 +1,5 @@
+import flixel.util.FlxTimer;
+
 var xeo:Character = new Character(-180, 5, mod + ':xeo');
 var xeoflip:Character = new Character(750 - 250, -94.75 + 100, mod + ':xeoflip');
 var bf2flip:Character = new Boyfriend(702.45 - 350, 370.45, mod + ':bf2flip');
@@ -11,6 +13,8 @@ var p3staticbg = new FlxSprite(0, 0);
 
 // it no workey bgvischangeArray = [1, 1024, 1088, 1216, 1280, 2305, 2810, 3199, 4096];
 function create() {
+	EngineSettings.customArrowSkin = "default";
+
 	add(xeo);
 	xeo.alpha = 0.0001;
 	add(xeoflip);
@@ -56,6 +60,7 @@ function doP3JumpTAILS() {
 
 	p3JumpTAILS.setGraphicSize(FlxG.width, FlxG.height);
 	p3JumpTAILS.screenCenter();
+	p3JumpTAILS.scrollFactor.set();
 	p3JumpTAILS.cameras = [camHUD];
 	add(p3JumpTAILS);
 	
