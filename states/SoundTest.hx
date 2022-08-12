@@ -2,6 +2,7 @@ import flixel.text.FlxTextBorderStyle;
 import DiscordClient;
 import PlayState;
 import LoadingState;
+import flixel.FlxBasic;
 
 var bg:FlxSprite;
 var soundTestTxt:FlxText;
@@ -9,6 +10,7 @@ var pcm:FlxText = new FlxText(FlxG.width / 6, FlxG.height / 2, 0, 'PCM NO .', 23
 var da:FlxText = new FlxText(FlxG.width * .6, FlxG.height / 2, 0, 'DA NO .', 23);
 var pcmNum:FlxText = new FlxText(FlxG.width / 6, FlxG.height / 2, 0, '0', 23);
 var daNum:FlxText = new FlxText(FlxG.width / 6, FlxG.height / 2, 0, '0', 23);
+var moveTenText:FlxText = new FlxText(FlxG.width / 6, FlxG.height / 2, 0, 'HOLD SHIFT TO INCREMENT BY 10', 23);
 var pcmValue:Int = 0;
 var daValue:Int = 0;
 
@@ -73,6 +75,17 @@ function create() {
 	daNum.y -= 70;
 	daNum.x += da.x - 70;
 
+	moveTenText.setFormat(Paths.font('SonicCDMenu'), 23, 0xFF00A2FF);
+	moveTenText.setBorderStyle(FlxTextBorderStyle.SHADOW, 0xFF000000, 4, 1);
+	moveTenText.screenCenter(FlxAxes.X);
+	moveTenText.y = FlxG.height - moveTenText.height - 50;
+	add(moveTenText);
+
+	FlxTween.tween(moveTenText, {alpha: 0, y: FlxG.height + 5}, 1.5, {
+		ease: FlxEase.linear,
+		startDelay: 5
+	});
+	
 	add(pcmNum);
 	add(daNum);
 }
