@@ -135,7 +135,7 @@ function stepHit(curStep:Int) {
 				kun.destroy(); */
 			remove(kun);
 			FlxTween.tween(FlxG.camera, {zoom: 0.9}, 2, {ease: FlxEase.cubeOut});
-			defaultCamZoom = 0.3;
+			defaultCamZoom = 0.9;
 
 			PlayState.remove(PlayState.boyfriend);
 			PlayState.boyfriend.destroy();
