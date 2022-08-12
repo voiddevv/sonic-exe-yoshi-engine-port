@@ -1,6 +1,4 @@
 //
-package cutscenes;
-
 function create() {
 	var wasWidescreen = PlayState.isWidescreen;
 
