@@ -1,5 +1,6 @@
 //
 var p3staticbg = new FlxSprite(0, 0);
+
 function create() {
 	var sSKY:FlxSprite = new FlxSprite(-621.1, -395.65).loadGraphic(Paths.image('stages/triple/Glitch'));
 	sSKY.antialiasing = true;

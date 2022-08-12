@@ -11,7 +11,8 @@ var p3JumpTAILS:FlxSprite = new FlxSprite().loadGraphic(Paths.image('coolshit/Ta
 var daP3Static = new FlxSprite(0, 0);
 var p3staticbg = new FlxSprite(0, 0);
 
-// it no workey bgvischangeArray = [1, 1024, 1088, 1216, 1280, 2305, 2810, 3199, 4096];
+// it no workey
+bgvischangeArray = [1, 1024, 1088, 1216, 1280, 2305, 2810, 3199, 4096];
 function create() {
 	EngineSettings.customArrowSkin = "default";
 
@@ -31,7 +32,6 @@ function create() {
 	dads.push(eggman);
 	dads.push(kun);
 	dads.push(xeoflip);
-
 }
 
 function doP3Static() {
@@ -63,7 +63,6 @@ function doP3JumpTAILS() {
 	p3JumpTAILS.scrollFactor.set();
 	p3JumpTAILS.cameras = [camHUD];
 	add(p3JumpTAILS);
-	
 
 	FlxG.camera.shake(0.0025, 0.50);
 	FlxG.sound.play(Paths.sound('P3Jumps/TailsScreamLOL'), .1);
@@ -95,11 +94,11 @@ function doP3JumpKNUCKLES() {
 
 function stepHit(curStep:Int) {
 	switch (curStep) {
-		case 1, 1024, 1088, 1216, 1280, 2305, 2810, 3199, 4096:
+		case 1, 1024, 1088, 1216, 1280, 2305, 2810, 3199, 4096: // cool af static effect
 			doP3Static();
-		case 144:
+		case 144: // funny tails jumpscare
 			doP3JumpTAILS();
-		case 1040:
+		case 1040: // switch to xeno - drowning drowning sinking sinking
 			dad.x = 300;
 			dad.y = 230;
 			FlxTween.tween(FlxG.camera, {zoom: 0.9}, 0.95, {ease: FlxEase.cubeOut});
@@ -113,7 +112,6 @@ function stepHit(curStep:Int) {
 			PlayState.add(PlayState.boyfriend);
 			bf2.alpha = 1;
 		case 1296: // switch to knuckles facing left facing right and bf facing right, and cool static
-
 			FlxTween.tween(FlxG.camera, {zoom: 1.1}, 2, {ease: FlxEase.cubeOut});
 			defaultCamZoom = 1.1;
 			p3staticbg.visible = false;
@@ -131,7 +129,7 @@ function stepHit(curStep:Int) {
 			PlayState.add(PlayState.boyfriend);
 			boyfriend.flipX = true;
 
-		 doP3JumpKNUCKLES();
+			doP3JumpKNUCKLES();
 		case 2320:
 			/*dads.remove(kun);
 				kun.destroy(); */
