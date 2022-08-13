@@ -12,7 +12,7 @@ var diff:FlxSprite;
 var staticThing:FlxSprite;
 
 // songs 'n' selection shit
-var songs = ['too slow', 'you can\'t run', 'trible-trouble'];
+var songs = ['too slow', 'you can\'t run', 'triple-trouble'];
 var curDiff:Int = 2;
 var curAct:Int = 0;
 var actSelec:Bool = false;

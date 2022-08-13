@@ -171,6 +171,8 @@ function stepHit(curStep:Int) {
 		case 2887, 3015, 4039:
 			eggman.playAnim('laugh', true);
 		case 4111:
+			dad.x = 130;
+			dad.y = 200;
 			p3staticbg.visible = true;
 			remove(eggman);
 			xeo.alpha = 1;
