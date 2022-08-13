@@ -1,4 +1,5 @@
 //
+var pat:FlxSprite = new FlxSprite().loadGraphic(Paths.image('coolshit/pat'));
 var sunk:FlxSprite = new FlxSprite();
 
 function create() {
@@ -28,10 +29,13 @@ function stepHit(curStep:Int) {
 			boyfriend.visible = false;
 			dad.visible = false;
 			sunk.visible = false;
-			var pat:FlxSprite = new FlxSprite().loadGraphic(Paths.image('coolshit/pat'));
 			pat.x = 600;
 			pat.y = 400;
+		case 2296:
 			add(pat);
+			pat.alpha=0.1;
+			FlxTween.tween(pat, { alpha: 1 }, 8.3);
+			
 	}
 
 	if (curStep == 538 || curStep == 2273) {
