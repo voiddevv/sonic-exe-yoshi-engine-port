@@ -1,15 +1,15 @@
 {
 	"arrowColors": null,
 	"camOffset": {
-		"x": -23,
-		"y": 319
+		"x": -303,
+		"y": 369
 	},
 	"globalOffset": {
 		"x": 0,
 		"y": 0
 	},
-	"healthbarColor": "#660000",
-	"flipX": false,
+	"healthbarColor": "#390000",
+	"flipX": true,
 	"anims": [
 		{
 			"indices": null,
@@ -22,17 +22,8 @@
 		},
 		{
 			"indices": null,
-			"x": -45.037037037037,
-			"y": -346.296296296296,
-			"anim": "Knux Right",
-			"loop": false,
-			"name": "singRIGHT",
-			"framerate": 24
-		},
-		{
-			"indices": null,
-			"x": 19.2592592592593,
-			"y": -371.851851851852,
+			"x": 19,
+			"y": -377,
 			"anim": "Knux Down",
 			"loop": false,
 			"name": "singDOWN",
@@ -40,20 +31,29 @@
 		},
 		{
 			"indices": null,
-			"x": 81.703703703704,
-			"y": -346.296296296296,
-			"anim": "Knux Left",
+			"x": 147,
+			"y": -346,
+			"anim": "Knux Right",
 			"loop": false,
-			"name": "singLEFT",
+			"name": "singRIGHT",
 			"framerate": 24
 		},
 		{
 			"indices": null,
-			"x": -0.2222222222222,
-			"y": -242.518518518519,
+			"x": 0,
+			"y": -243,
 			"anim": "Knux Up",
 			"loop": false,
 			"name": "singUP",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 82,
+			"y": -346,
+			"anim": "Knux Left",
+			"loop": false,
+			"name": "singLEFT",
 			"framerate": 24
 		}
 	],

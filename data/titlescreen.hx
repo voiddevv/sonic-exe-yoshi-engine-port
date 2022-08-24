@@ -2,7 +2,6 @@
 
 var pressedEnter:Bool = FlxControls.justPressed.ENTER;
 var Logo:FlxSprite;
-var bg:FlxSprite;
 var titleText:FlxSprite;
 
 state.remove(FlxG.state.titleText);

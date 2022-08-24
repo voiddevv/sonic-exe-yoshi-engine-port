@@ -11,16 +11,6 @@
 		},
 		{
 			"scripts": [
-				"stages/sonicStage",
-				"scripts/nocountdown"
-			],
-			"difficulties": null,
-			"end_cutscene": null,
-			"cutscene": null,
-			"name": "too-slow"
-		},
-		{
-			"scripts": [
 				"stages/sonicexeStage",
 				"scripts/nocountdown"
 			],
@@ -105,6 +95,17 @@
 			"end_cutscene": null,
 			"cutscene": null,
 			"name": "chaos"
+		},
+		{
+			"scripts": [
+				"stages/sonicStage",
+				"scripts/nocountdown",
+				"cutscenes/tooslow"
+			],
+			"difficulties": null,
+			"end_cutscene": null,
+			"cutscene": null,
+			"name": "too-slow"
 		}
 	]
 }

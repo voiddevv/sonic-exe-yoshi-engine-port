@@ -66,11 +66,7 @@ function doP3JumpTAILS() {
 
 	FlxG.camera.shake(0.0025, 0.50);
 	FlxG.sound.play(Paths.sound('P3Jumps/TailsScreamLOL'), .1);
-
-	new FlxTimer().start(0.2, function(tmr:FlxTimer) {
-		trace('ended simple jump');
-		remove(p3JumpTAILS);
-	});
+	FlxTween.tween(p3JumpTAILS, {alpha: 0}, (0.5), {ease:FlxEase.cubeInout});
 }
 
 function doP3JumpKNUCKLES() {
@@ -83,11 +79,7 @@ function doP3JumpKNUCKLES() {
 
 	FlxG.camera.shake(0.0025, 0.50);
 	FlxG.sound.play(Paths.sound('P3Jumps/KnucklesScreamLOL'), .1);
-
-	new FlxTimer().start(0.2, function(tmr:FlxTimer) {
-		trace('ended simple jump');
-		remove(p3JumpKNUCKLES);
-	});
+	FlxTween.tween(p3JumpKNUCKLES, {alpha: 0}, (.6), {ease:FlxEase.cubeInout});
 
 	FlxG.sound.play(Paths.sound('staticBUZZ'));
 }
@@ -121,7 +113,6 @@ function stepHit(curStep:Int) {
 			dad.y = 660;
 			kun.alpha = 1;
 			PlayState.iconP2.changeCharacter(mod + ':kun');
-			kun.flipX = true;
 			PlayState.dad = kun;
 			PlayState.remove(PlayState.boyfriend);
 			PlayState.boyfriend.destroy();

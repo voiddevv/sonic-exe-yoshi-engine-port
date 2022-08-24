@@ -10,8 +10,12 @@ function create() {
 	bgspec.scale.x = 8;
 	bgspec.scale.y = 8;
 	add(bgspec);
+	if (curBeat % 2 == 0)
+		{
+			FlxTween.tween(vg,{ alpha: 0}, .9);
+			FlxTween.tween(vg,{ alpha: 1}, .9, {type: FlxTween.PINGPONG,startDelay: .9});
+		}	
 }
-
 function createPost() {
 	vg.alpha = 1;
 	vg.cameras = [camHUD];
@@ -129,4 +133,7 @@ function stepHit(curStep:Int) {
 			boyfriend.scrollFactor.set(1.3, 1);
 			gf.scrollFactor.set(1.25, 1);
 	}
+}
+function restart() {
+	FlxTween.tween(vg,{ alpha: 1}, 0.5, {onComplete: restart });
 }
