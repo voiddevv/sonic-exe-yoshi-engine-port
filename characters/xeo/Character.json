@@ -1,9 +1,9 @@
 {
 	"arrowColors": [
-		"#AC358A",
-		"#201F7A",
-		"#0B1047",
-		"#A81F8C"
+		"#8D0ECA",
+		"#290675",
+		"#130549",
+		"#8D0ECA"
 	],
 	"camOffset": {
 		"x": 0,
@@ -27,11 +27,11 @@
 		},
 		{
 			"indices": null,
-			"x": 4,
-			"y": -19,
-			"anim": "Beast_DOWN",
+			"x": -135,
+			"y": -152,
+			"anim": "Beast_LAUGH",
 			"loop": false,
-			"name": "singDOWN",
+			"name": "laugh",
 			"framerate": 24
 		},
 		{
@@ -45,20 +45,11 @@
 		},
 		{
 			"indices": null,
-			"x": -135,
-			"y": -152,
-			"anim": "Beast_LAUGH",
+			"x": 4,
+			"y": -19,
+			"anim": "Beast_DOWN",
 			"loop": false,
-			"name": "laugh",
-			"framerate": 24
-		},
-		{
-			"indices": null,
-			"x": 170,
-			"y": -22,
-			"anim": "Beast_LEFT",
-			"loop": false,
-			"name": "singLEFT",
+			"name": "singDOWN",
 			"framerate": 24
 		},
 		{
@@ -68,6 +59,15 @@
 			"anim": "Beast_UP",
 			"loop": false,
 			"name": "singUP",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 170,
+			"y": -22,
+			"anim": "Beast_LEFT",
+			"loop": false,
+			"name": "singLEFT",
 			"framerate": 24
 		}
 	],

@@ -1,5 +1,10 @@
 {
-	"arrowColors": null,
+	"arrowColors": [
+		"#671919",
+		"#009900",
+		"#FFCC00",
+		"#8D1919"
+	],
 	"camOffset": {
 		"x": -303,
 		"y": 369
@@ -22,15 +27,6 @@
 		},
 		{
 			"indices": null,
-			"x": 19,
-			"y": -377,
-			"anim": "Knux Down",
-			"loop": false,
-			"name": "singDOWN",
-			"framerate": 24
-		},
-		{
-			"indices": null,
 			"x": 147,
 			"y": -346,
 			"anim": "Knux Right",
@@ -40,11 +36,11 @@
 		},
 		{
 			"indices": null,
-			"x": 0,
-			"y": -243,
-			"anim": "Knux Up",
+			"x": 19,
+			"y": -377,
+			"anim": "Knux Down",
 			"loop": false,
-			"name": "singUP",
+			"name": "singDOWN",
 			"framerate": 24
 		},
 		{
@@ -54,6 +50,15 @@
 			"anim": "Knux Left",
 			"loop": false,
 			"name": "singLEFT",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 0,
+			"y": -243,
+			"anim": "Knux Up",
+			"loop": false,
+			"name": "singUP",
 			"framerate": 24
 		}
 	],
