@@ -97,13 +97,12 @@
 			"name": "chaos"
 		},
 		{
+			"scripts": [
+				"stages/sonicStage"
+			],
+			"difficulties": null,
 			"end_cutscene": null,
 			"cutscene": "cutscenes/MP4-Cutscene",
-			"difficulties": null,
-			"scripts": [
-				"stages/sonicStage",
-				"cutscenes/MP4-Cutscene"
-			],
 			"name": "too-slow"
 		}
 	]
