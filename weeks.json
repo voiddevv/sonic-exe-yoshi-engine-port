@@ -1,1 +1,49 @@
-{"weeks":[{"difficulties":null,"selectSFX":null,"color":null,"name":"Your new week","bf":null,"bg":null,"bgAnim":null,"songs":[],"buttonSprite":"storymenu/week1","gf":null,"dad":null},{"difficulties":null,"selectSFX":"confirmMenu","color":"0xFFF9CF51","name":"fuck you u bitcjh","bf":{"file":"storymenu/campaign_menu_UI_characters","animation":"BF idle dance white","confirmAnim":"BF HEY!!","scale":0.9,"flipX":false,"offset":[100,20]},"bg":"","bgAnim":"","songs":["you-cant-run"],"buttonSprite":"storymenu/week1","gf":{"file":"storymenu/campaign_menu_UI_characters","animation":"GF Dancing Beat WHITE","confirmAnim":"","scale":0.5,"flipX":false,"offset":[150,159]},"dad":{"file":"storymenu/campaign_menu_UI_characters","animation":"Dad idle dance BLACK LINE","confirmAnim":"","scale":0.5,"flipX":false,"offset":[120,200]}}]}
+{
+	"weeks": [
+		{
+			"difficulties": null,
+			"selectSFX": null,
+			"color": null,
+			"name": "cock",
+			"bf": null,
+			"bg": null,
+			"bgAnim": null,
+			"songs": [
+				"too-slow"
+			],
+			"buttonSprite": null,
+			"gf": null,
+			"dad": null
+		},
+		{
+			"difficulties": null,
+			"selectSFX": null,
+			"color": null,
+			"name": "cock",
+			"bf": null,
+			"bg": null,
+			"bgAnim": null,
+			"songs": [
+				"you-cant-run"
+			],
+			"buttonSprite": null,
+			"gf": null,
+			"dad": null
+		},
+		{
+			"difficulties": null,
+			"selectSFX": null,
+			"color": null,
+			"name": "cock",
+			"bf": null,
+			"bg": null,
+			"bgAnim": null,
+			"songs": [
+				"triple-trouble"
+			],
+			"buttonSprite": null,
+			"gf": null,
+			"dad": null
+		}
+	]
+}
