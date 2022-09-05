@@ -9,6 +9,11 @@ var selectedSomethin:Bool = false;
 var enableControls:Bool = false;
 
 function create() {
+	if (!save.data.mainMenu_doneAnimation) {
+		save.data.mainMenu_doneAnimation = false;
+		save.flush();
+	}
+
 	var everything = [
 		"story mode",
 		"freeplay",
@@ -75,15 +80,28 @@ function createPost() {
 		menuItem.ID = i;
 		menuItem.scrollFactor.set();
 		menuItem.antialiasing = true;
-		FlxTween.tween(menuItem, {x: xval}, 1 + (i * 0.25), {
-			ease: FlxEase.expoInOut,
-			onComplete: function() {
-				if (menuItem.ID == 3) {
-					changeItem(0);
-					enableControls = true;
+		if (!save.data.mainMenu_doneAnimation)
+			FlxTween.tween(menuItem, {x: xval}, 1 + (i * 0.25), {
+				ease: FlxEase.expoInOut,
+				onComplete: function() {
+					if (menuItem.ID == 3) {
+						changeItem(0);
+						enableControls = true;
+						save.data.mainMenu_doneAnimation = true;
+						save.flush();
+					}
 				}
-			}
-		});
+			});
+		else
+			FlxTween.tween(menuItem, {x: xval}, 0.00001, {
+				ease: FlxEase.expoInOut,
+				onComplete: function() {
+					if (menuItem.ID == 3) {
+						changeItem(0);
+						enableControls = true;
+					}
+				}
+			});
 
 		menuI.add(menuItem);
 

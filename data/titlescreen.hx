@@ -32,6 +32,9 @@ function create() {
 	titleText.updateHitbox();
 	titleText.screenCenter();
 	add(titleText);
+
+	save.data.mainMenu_doneAnimation = false;
+	save.flush();
 }
 
 function update() {

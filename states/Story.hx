@@ -1,6 +1,9 @@
 import flixel.text.FlxTextBorderStyle;
 import flixel.FlxBasic;
 import Medals;
+// loading to week shit
+import PlayState;
+import LoadingState;
 
 var bg:FlxSprite;
 var grey:FlxSprite;
@@ -17,6 +20,9 @@ var curDiff:Int = 2;
 var curAct:Int = 0;
 var actSelec:Bool = false;
 var oneclickpls:Bool = true;
+
+// story mode json into var woohoo
+var storyWeek:Json = Json.parse(Assets.getText(Paths.getPath('weeks.json', 'TEXT', 'mods/' + mod)));
 
 // debugging stuff
 var actOrSmthTxt:FlxText;
@@ -94,12 +100,12 @@ function create() {
 	diff.screenCenter(FlxAxes.X);
 	add(diff);
 
-	var _ = new FlxText(0, 0, 0, "THIS MENU IS UNFINISHED, don't expect everything to work!", 22);
-	_.setFormat(Paths.font('SonicCDMenu'), 22, 0xFF00A2FF);
-	_.setBorderStyle(FlxTextBorderStyle.SHADOW, 0xFF444444, 4, 1);
-	_.screenCenter();
-	_.y = FlxG.height - _.height - 5;
-	add(_);
+	// var _ = new FlxText(0, 0, 0, "THIS MENU IS UNFINISHED, don't expect everything to work!", 22);
+	// _.setFormat(Paths.font('SonicCDMenu'), 22, 0xFF00A2FF);
+	// _.setBorderStyle(FlxTextBorderStyle.SHADOW, 0xFF444444, 4, 1);
+	// _.screenCenter();
+	// _.y = FlxG.height - _.height - 5;
+	// add(_);
 
 	var sex = new FlxSprite();
 	sex.loadGraphic(Paths.image('story/ref'));
@@ -146,13 +152,15 @@ function update(elapsed) {
 		actSelec = !actSelec;
 	}
 
-	actOrSmthTxt.text = "SELECTED: "
-		+ (actSelec ? "act" : "diff")
-		+ "\nDIFF: "
-		+ curDiff
-		+ "\nACT: "
-		+ curAct
-		+ "\n";
+	if ((controls.ENTER) && oneclickpls) {
+		trace("-- ACT " + curAct + " --");
+		trace("-- DIFF" + diff.animation.curAnim.name + " --");
+
+		oneclickpls = false;
+		loadAndPlayStoryWeek(curAct, diff.animation.curAnim.name);
+	}
+
+	actOrSmthTxt.text = "SELECTED: " + (actSelec ? "act" : "diff") + "\nDIFF: " + curDiff + "\nACT: " + curAct + "\n";
 	actOrSmthTxt.x = FlxG.width - actOrSmthTxt.width - 5;
 
 	red.alpha = (actSelec ? 1 : 0.4);
@@ -199,4 +207,24 @@ function changeDiff(e:Int = 1) {
 	diff.y = 620; // 600 + 20
 	diff.alpha = 0.3;
 	FlxTween.tween(diff, {y: 600, alpha: 1}, 0.07); // whats the point of this if it goes for 7/100th of a second - wtf sonic.exe s.c.
+}
+
+/**
+	What `CoolUtil.loadWeek()` tried to do, but nothing was made for it.
+
+	@param weekID `Type: Int` The week number. If you're trying to load the first week, for example, you would put 0, because coders start counting at 0 :3
+	@param difficulty `Type: String` The difficulty to play the week at
+**/
+function loadAndPlayStoryWeek(weekID:Int, difficulty:String) {
+	PlayState.actualModWeek = storyWeek.weeks[weekID];
+	// PlayState.songMod = storyWeek.weeks[weekID].mod;
+	PlayState.songMod = mod;
+	PlayState.storyPlaylist = storyWeek.weeks[weekID].songs;
+	PlayState.startTime = 0;
+	PlayState.storyDifficulty = difficulty;
+	CoolUtil.loadSong(mod, storyWeek.weeks[weekID].songs[0].toString(), difficulty);
+	PlayState.storyWeek = weekID;
+	PlayState.campaignScore = 0;
+	PlayState.isStoryMode = true;
+	LoadingState.loadAndSwitchState(new PlayState());
 }

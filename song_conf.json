@@ -99,8 +99,7 @@
 		{
 			"scripts": [
 				"stages/sonicStage",
-				"scripts/nocountdown",
-				"cutscenes/tooslow"
+				"scripts/nocountdown"
 			],
 			"difficulties": null,
 			"end_cutscene": null,

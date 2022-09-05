@@ -1,37 +1,29 @@
-//
+import flixel.math.FlxRandom;
+
 var daStatic:FlxSprite = new FlxSprite(0, 0);
 var daJumpscare:FlxSprite = new FlxSprite(0, 0);
-daJumpscare.frames = Paths.getSparrowAtlas('coolshit/sonicJUMPSCARE');
-daJumpscare.animation.addByPrefix('jump', 'sonicSPOOK', 24, false);
 var simplejump:FlxSprite = new FlxSprite().loadGraphic(Paths.image('coolshit/simplejump'));
 var stage:Stage = null;
 
 function doJumpscare() {
 	trace('JUMPSCARE aaaa');
 
-	daJumpscare.frames = Paths.getSparrowAtlas('coolshit/sonicJUMPSCARE');
-	daJumpscare.animation.addByPrefix('jump', 'sonicSPOOK', 24, false);
-
 	daJumpscare.screenCenter();
-
 	daJumpscare.scale.x = 1.1;
 	daJumpscare.scale.y = 1.1;
-
 	daJumpscare.y += 370;
-	daJumpscare.alpha = 1;
-
+	// daJumpscare.alpha = 1;
+	daJumpscare.visible = true;
 	daJumpscare.cameras = [camHUD];
 
 	FlxG.sound.play(Paths.sound('jumpscare'), 1);
 	FlxG.sound.play(Paths.sound('datOneSound'), 1);
 
-	add(daJumpscare);
-
 	daJumpscare.animation.play('jump');
 
 	daJumpscare.animation.finishCallback = function(pog:String) {
 		trace('ended jump');
-		remove(daJumpscare);
+		daJumpscare.visible = false;
 	}
 }
 
@@ -82,44 +74,46 @@ function doSimpleJump() {
 	}
 }
 
-function doStaticSign(lestatic:Int = 0, leopa:Bool = true) {
+function doStaticSign(lestatic:Int = 0, ?leopa:Bool = true) {
 	trace('static MOMENT HAHAHAH ' + lestatic);
+	var deezNuts = new FlxRandom();
 
-	daStatic.frames = Paths.getSparrowAtlas('coolshit/daSTAT');
+	if ((deezNuts.bool())) {
+		daStatic.frames = Paths.getSparrowAtlas('coolshit/daSTAT');
+		daStatic.setGraphicSize(FlxG.width, FlxG.height);
+		daStatic.screenCenter();
+		daStatic.cameras = [camHUD];
 
-	daStatic.setGraphicSize(FlxG.width, FlxG.height);
+		switch (lestatic) {
+			case 0:
+				daStatic.animation.addByPrefix('static', 'staticFLASH', 24, false);
+		}
+		add(daStatic);
 
-	daStatic.screenCenter();
+		FlxG.sound.play(Paths.sound('staticBUZZ'));
 
-	daStatic.cameras = [camHUD];
+		if (leopa) {
+			if (daStatic.alpha != 0)
+				daStatic.alpha = FlxG.random.float(0.1, 0.5);
+		} else
+			daStatic.alpha = 0.6;
 
-	switch (lestatic) {
-		case 0:
-			daStatic.animation.addByPrefix('static', 'staticFLASH', 24, false);
-	}
-	add(daStatic);
+		daStatic.animation.play('static');
 
-	FlxG.sound.play(Paths.sound('staticBUZZ'));
-
-	if (leopa) {
-		if (daStatic.alpha != 0)
-			daStatic.alpha = FlxG.random.float(0.1, 0.5);
-	} else
-		daStatic.alpha = 0.6;
-
-	daStatic.animation.play('static');
-
-	daStatic.animation.finishCallback = function(pog:String) {
-		trace('ended static');
-		remove(daStatic);
+		daStatic.animation.finishCallback = function(pog:String) {
+			trace('ended static');
+			remove(daStatic);
+		}
+	} else {
+		trace('fuck you its too much!');
 	}
 }
 
 function create() {
-	add(daJumpscare);
+	daJumpscare.frames = Paths.getSparrowAtlas('coolshit/sonicJUMPSCARE');
+	daJumpscare.animation.addByPrefix('jump', 'sonicSPOOK', 24, false);
 	daJumpscare.animation.play('jump');
-	daJumpscare.alpha = 0.1;
-	daJumpscare.visible = true;
+	daJumpscare.visible = false;
 
 	PlayState.boyfriend.y += 25;
 	PlayState.dad.scale.x = 1.1;
@@ -127,16 +121,17 @@ function create() {
 	PlayState.dad.scrollFactor.set(1.37, 1);
 	PlayState.gf.scrollFactor.set(1.37, 1);
 	PlayState.boyfriend.scrollFactor.set(1.37, 1);
+
 	var sSKY:FlxSprite = new FlxSprite(-222, -16 + 150).loadGraphic(Paths.image('stages/sonicStage/SKY'));
 	sSKY.antialiasing = true;
 	sSKY.scrollFactor.set(1, 1);
 	sSKY.active = false;
 	add(sSKY);
 
-	var hills:FlxSprite = new FlxSprite(-264, -156 + 150).loadGraphic(Paths.image('stages/sonicStage/HILLS'));
-	hills.antialiasing = true;
-	hills.scrollFactor.set(1.1, 1);
-	hills.active = false;
+	// var hills:FlxSprite = new FlxSprite(-264, -156 + 150).loadGraphic(Paths.image('stages/sonicStage/HILLS'));
+	// hills.antialiasing = true;
+	// hills.scrollFactor.set(1.1, 1);
+	// hills.active = false;
 
 	var bg2:FlxSprite = new FlxSprite(-345, -289 + 170).loadGraphic(Paths.image('stages/sonicStage/FLOOR2'));
 	bg2.updateHitbox();
@@ -155,7 +150,6 @@ function create() {
 	eggman.antialiasing = true;
 	eggman.scrollFactor.set(1.32, 1);
 	eggman.active = false;
-
 	add(eggman);
 
 	var tail:FlxSprite = new FlxSprite(-199 - 150, -259 + 150).loadGraphic(Paths.image('stages/sonicStage/TAIL'));
@@ -163,7 +157,6 @@ function create() {
 	tail.antialiasing = true;
 	tail.scrollFactor.set(1.34, 1);
 	tail.active = false;
-
 	add(tail);
 
 	var knuckle:FlxSprite = new FlxSprite(185 + 100, -350 + 150).loadGraphic(Paths.image('stages/sonicStage/KNUCKLE'));
@@ -171,7 +164,6 @@ function create() {
 	knuckle.antialiasing = true;
 	knuckle.scrollFactor.set(1.36, 1);
 	knuckle.active = false;
-
 	add(knuckle);
 
 	var sticklol:FlxSprite = new FlxSprite(-100, 50);
@@ -181,11 +173,10 @@ function create() {
 	sticklol.updateHitbox();
 	sticklol.antialiasing = true;
 	sticklol.scrollFactor.set(1.37, 1);
-
 	add(sticklol);
 }
 
-function createpost() {
+function createPost() {
 	add(daJumpscare);
 	daJumpscare.visible = false;
 }
