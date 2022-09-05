@@ -109,7 +109,7 @@ function create() {
 
 	var sex = new FlxSprite();
 	sex.loadGraphic(Paths.image('story/ref'));
-	sex.alpha = 0.5;
+	sex.alpha = 0;
 	// add(sex);
 
 	// debug stuff

@@ -1,16 +1,18 @@
 {
+	"discordRpc": "1016132911503769601",
 	"skinnableGFs": [],
 	"locked": false,
 	"BFskins": [],
-	"name": "sonicexe",
+	"downloadLink": "https://github.com/AMNOTSIRVOID/sonic-exe-yoshi-engine-port",
 	"keyNumbers": [
 		4,
 		5
 	],
+	"name": "sonicexe",
 	"description": "sonicexe port",
-	
 	"skinnableBFs": [],
 	"titleBarName": "Friday Night Funkin' - sonic.exe",
+	"downloadLinkAlt": "kbhgames.com",
 	"GFskins": [
 		"custom-gf"
 	]

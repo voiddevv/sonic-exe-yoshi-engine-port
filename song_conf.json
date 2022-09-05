@@ -98,12 +98,11 @@
 		},
 		{
 			"scripts": [
-				"stages/sonicStage",
-				"scripts/nocountdown"
+				"stages/sonicStage"
 			],
 			"difficulties": null,
 			"end_cutscene": null,
-			"cutscene": null,
+			"cutscene": "cutscenes/MP4-Cutscene",
 			"name": "too-slow"
 		}
 	]
