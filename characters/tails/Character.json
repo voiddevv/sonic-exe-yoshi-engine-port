@@ -27,15 +27,6 @@
 		},
 		{
 			"indices": null,
-			"x": 60,
-			"y": -50,
-			"anim": "Tails DOWN",
-			"loop": false,
-			"name": "singDOWN",
-			"framerate": 24
-		},
-		{
-			"indices": null,
 			"x": 0,
 			"y": -20,
 			"anim": "Tails RIGHT",
@@ -45,11 +36,20 @@
 		},
 		{
 			"indices": null,
-			"x": 80,
-			"y": -20,
-			"anim": "Tails LEFT",
+			"x": 60,
+			"y": -50,
+			"anim": "Tails DOWN",
 			"loop": false,
-			"name": "singLEFT",
+			"name": "singDOWN",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 20,
+			"y": 40,
+			"anim": "Tails UP",
+			"loop": false,
+			"name": "singUP",
 			"framerate": 24
 		},
 		{
