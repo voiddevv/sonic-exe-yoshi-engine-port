@@ -6,6 +6,8 @@ var spinArray = [
 
 function create() {
 	PlayState.autoCamZooming = false;
+	FlxG.camera.flash(0x08002d,1.7);
+
 }
 
 var offset = 0;
